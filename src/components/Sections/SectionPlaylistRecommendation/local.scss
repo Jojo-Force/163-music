@@ -1,0 +1,98 @@
+/*************************************************/
+/*歌单推荐 区*/
+/*************************************************/
+.section-playlist-recommendation{
+  background-color: #f7f7f7;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1.6rem;
+  position: relative;
+}
+
+.img-box{
+  display: flex;
+  gap: 1.4rem;
+}
+
+.img-container{
+  overflow: hidden;
+}
+.section-playlist-img{
+  height: 15rem;
+  transition: all 0.3s;
+}
+
+.section-playlist-img:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.playlist-name{
+  margin-top: 1.2rem;
+  font-size: 1.0rem;
+  color: black;
+}
+.play-times{
+  margin-top: 0.6rem;
+  font-size: 1.0rem;
+  color:#878787;
+}
+
+
+.left-btn{
+  border: none;
+  background-color: #ECECEC;
+  padding: 3rem 1.5rem;
+  position: absolute;
+  top:50%;
+  left: 0;
+  transform: translate(-100%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background-color: #e1e1e1;
+  }
+  transition: all 0.5s;
+  opacity: 0.2;
+}
+
+.right-btn{
+  border: none;
+  background-color: #ECECEC;
+  padding: 3rem 1.5rem;
+  position: absolute;
+  top:50%;
+  right: 0;
+  transform: translate(100%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background-color: #e1e1e1;
+  }
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+
+.left-icon{
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.right-icon{
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.section-playlist-recommendation:hover .left-btn{
+  transform: translate(0,-50%);
+  opacity:1;
+}
+
+.section-playlist-recommendation:hover .right-btn{
+  transform: translate(0,-50%);
+  opacity:1;
+}

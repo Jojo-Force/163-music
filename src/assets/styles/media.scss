@@ -1,0 +1,306 @@
+
+/* rem and em do Not depend on html font-size in media queries!
+Instead, 1rem= 1em = 16px*/
+
+/*
+--- 01 字体系统
+  - FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  - SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/*************************************************/
+/*小于1344px（smaller desktops）*/
+/*************************************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem !important;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem !important;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/*************************************************/
+/*小于1200px（landscape tablets)*/
+/*************************************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25% !important;
+  }
+
+  .grid {
+    column-gap: 4.8rem !important;
+    row-gap: 6.4rem !important;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem !important;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem !important;
+  }
+
+  .header {
+    padding: 0 3.2rem !important;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem !important;
+  }
+
+  .hero {
+    gap: 4.8rem !important;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem !important;
+  }
+}
+
+/*************************************************/
+/*小于944px（tablets)*/
+/*************************************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50% !important;
+  }
+
+  .hero {
+    grid-template-columns: 1fr !important;
+    padding: 0 8rem !important;
+    gap: 6.4rem !important;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center !important;
+  }
+
+  .hero-img {
+    width: 60% !important;
+  }
+
+  .delivered-meals {
+    justify-content: center !important;
+    margin-top: 3.2rem !important;
+  }
+
+  .logos img {
+    height: 2.4rem !important;
+  }
+
+  .step-number {
+    font-size: 7.4 !important;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem !important;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+
+  .cta {
+    /*60% 40%*/
+    grid-template-columns: 3fr 2fr !important;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem !important;
+  }
+
+  /*手机*/
+  .btn-mobile-nav {
+    display: block !important;
+    z-index: 9999 !important;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    /*毛玻璃效果*/
+    backdrop-filter: blur(5px) !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    transform: translateX(100%) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /*添加弹出动画*/
+    transition: all 0.5s ease-in !important;
+    /* 隐藏导航栏 */
+    /* display: none !important;不能有动画 */
+    /*隐藏导航栏3*/
+    /*1.透明度，有动画*/
+    opacity: 0 !important;
+    /*2.禁用tab到导航栏*/
+    pointer-events: none !important;
+    /*3.通知screen readers*/
+    visibility: hidden !important;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+    transform: translate(0) !important;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block !important;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none !important;
+  }
+
+  .main-nav-list {
+    flex-direction: column !important;
+    gap: 4.8rem !important;
+  }
+
+  .main-nav-list:link,
+  .main-nav-link:visited {
+    font-size: 3rem !important;
+  }
+}
+
+/*************************************************/
+/*小于 704px（Smaller tablets)*/
+/*************************************************/
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .diets {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+  }
+
+  .section-secondary {
+    margin-bottom: 4.8rem !important;
+  }
+
+  .princing-plan {
+    width: 100% !important;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3 !important;
+  }
+
+  .nav-col {
+    grid-row: 1 !important;
+    grid-column: span 2 !important;
+    margin-bottom: 3.2rem !important;
+  }
+}
+
+/*************************************************/
+/*小于 544px（Phones)*/
+/*************************************************/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem !important;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem !important;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 4.8rem 0 !important;
+  }
+
+  .hero {
+    padding: 0 3.2rem !important;
+  }
+
+  .hero-img {
+    width: 80% !important;
+  }
+
+  .logos img {
+    height: 1.2rem !important;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1 !important;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5 !important;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem) !important;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.2rem !important;
+  }
+
+  .cta {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cta-img-box {
+    height: 32rem !important;
+    grid-row: 1 !important;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem !important;
+  }
+
+  .pricing-plan {
+    width: 85% !important;
+  }
+  .pricing-plan--starter {
+    justify-self: center !important;
+  }
+  .pricing-plan--complete {
+    justify-self: center !important;
+  }
+}
