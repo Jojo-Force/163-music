@@ -1,7 +1,7 @@
 
 .section-new-song {
-  background-color: #f7f7f7;
-  height: 35rem;
+  background-color: #f3f3f3;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,9 +15,10 @@
   position: relative;
   cursor: pointer;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr 0.5fr;
   row-gap: 0;
   column-gap: 0;
+  width: 25rem;
 }
 
 .container{
@@ -33,12 +34,18 @@
 .singer-names{
   grid-row: 2/3;
   grid-column: 2/3;
+  white-space: nowrap;      /* 禁止换行 */
+  overflow: hidden;         /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  color: #878787;
 }
 
 .song-time{
   grid-row:1/3;
   grid-column: 3/4;
   align-self: center;
+  font-size: 1rem;
+  color: #878787;
 }
 
 .section-new-song-img {
@@ -55,11 +62,19 @@
   text-decoration: none;
   transition: all 0.3s;
   color: black;
+
+
+  white-space: nowrap;      /* 禁止换行 */
+  overflow: hidden;         /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
 }
 
 .song-name:active,
 .song-name:hover{
   color: #31C27C;
+  white-space: nowrap;      /* 禁止换行 */
+  overflow: hidden;         /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
 }
 
 .singer-name:link,
@@ -70,12 +85,18 @@
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
-  color: black;
+  color: #878787;
+  white-space: nowrap;      /* 禁止换行 */
+  overflow: hidden;         /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
 }
 
 .singer-name:active,
 .singer-name:hover{
   color: #31C27C;
+  white-space: nowrap;      /* 禁止换行 */
+  overflow: hidden;         /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
 }
 
 
@@ -109,8 +130,8 @@
   opacity: 1;
 }
 
-.section-playlist-img {
-  height: 15rem;
+.section-new-song-img {
+  height: 6.4rem;
   transition: all 0.3s ease-out;
 }
 
@@ -178,7 +199,24 @@
 }
 
 .img-box-sub1{
-  display: flex;
+  display: grid;
   gap: 1.4rem;
   transition: all 0.4s ease-out;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.img-box {
+  display: flex;
+  gap: 1.4rem;
+  width: 79.2rem;
+  overflow: hidden;
+  margin-top: 1.4rem;
+}
+
+.playall-btn{
+  background-color: #f3f3f3;
+  border: 0.1rem solid #C9C9C9;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
 }

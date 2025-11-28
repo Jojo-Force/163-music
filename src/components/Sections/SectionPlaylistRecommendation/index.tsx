@@ -3,12 +3,13 @@ import FigureBox from "./FigureBox";
 import {useRef} from "react";
 
 const SectionPlaylistRecommendation = () => {
+    const section = useRef<HTMLDivElement>(null);
     const imgBoxSub1 = useRef<HTMLDivElement>(null);
 
     let len = 820;
-    let childNum = 5;
+    const childNum = 5;
     let moveLen= 0;
-    let maxPage = childNum-1;
+    const maxPage = 5-1;
     let curPage = 0;
 
     const getLen = () =>{
@@ -27,7 +28,7 @@ const SectionPlaylistRecommendation = () => {
     const rightBtnClick = ()=>{
 
         getLen();
-        const dots = document.querySelector(".dots");
+        const dots = section.current.querySelector(".dots");
         dots.children[curPage].classList.remove("dot-select");
         if(curPage === maxPage){
             curPage = 0
@@ -43,7 +44,7 @@ const SectionPlaylistRecommendation = () => {
     }
 
     const leftBtnClick = ()=>{
-        const dots = document.querySelector(".dots");
+        const dots = section.current.querySelector(".dots");
         dots.children[curPage].classList.remove("dot-select");
         if(curPage === 0){
             curPage = maxPage;
@@ -61,12 +62,12 @@ const SectionPlaylistRecommendation = () => {
 
     const dotClick = (event)=>{
         /*取消原来选中*/
-        const child = document.querySelector('.dot-select');
+        const child = section.current.querySelector('.dot-select');
         child.classList.remove("dot-select");
 
         /*当前点击按钮获得选中*/
         event.currentTarget.classList.add("dot-select");
-        const parent = document.querySelector('.dots');
+        const parent = section.current.querySelector('.dots');
         const index = Array.from(parent.children).indexOf(event.currentTarget);
 
         /*计算curPage和移动距离*/
@@ -78,16 +79,16 @@ const SectionPlaylistRecommendation = () => {
     }
 
   return (
-    <section  className={s.sectionPlaylistRecommendation}>
+    <section  ref={section} className={s.sectionPlaylistRecommendation}>
       <button className={s.leftBtn} onClick={leftBtnClick}>
-        <ion-icon class="left-icon" name="chevron-back-outline"></ion-icon>
+        <ion-icon className={s.leftIcon} name="chevron-back-outline"></ion-icon>
       </button>
       <button className={s.rightBtn} onClick={rightBtnClick}>
-        <ion-icon class="right-icon" name="chevron-forward-outline"></ion-icon>
+        <ion-icon className={s.rightIcon} name="chevron-forward-outline"></ion-icon>
       </button>
       <h1>歌单推荐</h1>
       <div className="second-link-flexbox">
-        <a href="#" className="second-link">
+        <a href="#" className="second-link second-link-select">
           为你推荐
         </a>
         <a href="#" className="second-link">

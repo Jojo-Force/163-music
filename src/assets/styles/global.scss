@@ -287,10 +287,16 @@ ion-icon {
   color: #31c27c;
 }
 
+.second-link-select.second-link:link,
+.second-link-select.second-link:visited,{
+  color: #31c27c;
+}
+
 .second-link-flexbox {
   display: flex;
   gap: 2.4rem;
 }
+
 h1 {
   font-size: 2.4rem;
   letter-spacing: 5px;
