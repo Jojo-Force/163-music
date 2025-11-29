@@ -210,20 +210,33 @@
   margin-top: 1.4rem;
 }
 
-.playall-btn {
+.play-all-btn {
+  position: absolute;
   background-color: #f3f3f3;
   border: 0.1rem solid #c9c9c9;
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
-  position: absolute;
-  left: 0;
-}
-
-.section-new-song-container{
-  display: flex;
-  flex-direction: column;
+  left:-27.7rem;
+  display:flex;
   justify-content: center;
   align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.play-all-btn:hover {
+  background-color: #ededed;
+}
+.second-links-wrapper{
   position: relative;
-  gap: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.play-icon{
+  color: #999999;
+  height: 3.2rem;
+  width: 3.2rem;
 }
