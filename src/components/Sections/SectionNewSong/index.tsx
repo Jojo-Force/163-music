@@ -457,6 +457,7 @@ const SectionNewSong = () => {
 
   return (
     <section ref={section} className={s.sectionNewSong}>
+        <div className={s.sectionNewSongContainer}>
       <button className={s.leftBtn} onClick={leftBtnClick}>
         <ion-icon className={s.leftIcon} name="chevron-back-outline"></ion-icon>
       </button>
@@ -469,7 +470,6 @@ const SectionNewSong = () => {
       <h1>新歌首发</h1>
       <div className="second-link-flexbox">
         <button className={s.playallBtn}>播放全部</button>
-        <div className={s.secondLinkWrap}>
           <a href="#" className="second-link second-link-select">
             最新
           </a>
@@ -488,7 +488,6 @@ const SectionNewSong = () => {
           <a href="#" className="second-link">
             日本
           </a>
-        </div>
       </div>
       <div className={s.imgBox}>
         <div ref={imgBoxSub1} className={s.imgBoxSub1}>
@@ -512,6 +511,7 @@ const SectionNewSong = () => {
           <button className="dot" onClick={dotClick}></button>
         </div>
       </div>
+        </div>
     </section>
   );
 };

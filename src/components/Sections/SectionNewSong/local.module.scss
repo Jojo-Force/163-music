@@ -215,12 +215,15 @@
   border: 0.1rem solid #c9c9c9;
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
+  position: absolute;
+  left: 0;
 }
 
-.second-link-wrap {
-  flex: 1;
+.section-new-song-container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  position: relative;
+  gap: 1.6rem;
 }
