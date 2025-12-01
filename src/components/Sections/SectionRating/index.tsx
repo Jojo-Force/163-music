@@ -93,12 +93,18 @@ const imgs = [
 const SectionRating = () => {
   return (
     <section className={s.sectionRating}>
+        <div className={s.h1Box}>
       <h1>排行榜</h1>
+            <button className={s.moreBtn}>
+                更多<ion-icon className={s.moreIcon} name="chevron-forward-outline"></ion-icon></button>
+        </div>
       <div className={s.imgBox}>
+
         <div className={s.imgBoxSub1}>
           {imgs.map((img, index) => (
             <FigureBox
                 img={img}
+                id={"item"+index.toString()}
             ></FigureBox>
           ))}
         </div>
