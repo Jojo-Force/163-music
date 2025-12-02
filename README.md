@@ -1,6 +1,6 @@
-# qq-music-react
+# 163-music-react
 
-qq-music-react is created by react.js
+163-music-react is created by react.js
 
 ## Install Package
 
