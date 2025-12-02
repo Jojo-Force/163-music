@@ -1,4 +1,4 @@
-import SectionPlaylistRecommendation from "@/components/Sections/SectionPlaylistRecommendation";
+import SectionHero from "@/components/Sections/SectionHero";
 import SectionNewSong from "../Sections/SectionNewSong";
 import SectionRecommend from "../Sections/SectionRecommend";
 import SectionNewCD from "../Sections/SectionNewCD";
@@ -8,7 +8,7 @@ import SectionMV from "../Sections/SectionMV";
 const Main =()=>{
     return (
         <main>
-            <SectionPlaylistRecommendation/>
+            <SectionHero/>
             <SectionNewSong/>
             <SectionRecommend/>
             <SectionNewCD/>

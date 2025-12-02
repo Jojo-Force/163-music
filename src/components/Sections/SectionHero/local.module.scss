@@ -1,0 +1,159 @@
+/*************************************************/
+/*歌单推荐 区*/
+/*************************************************/
+.section-hero {
+  background-image: url("img/hero/1-bg.jpg");
+  //backdrop-filter: blur(20px);
+  background-size: 6000px;
+  background-position: center center;
+  height: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+.img-box {
+  display: flex;
+  gap: 1.4rem;
+  width: 806px;
+  overflow: hidden;
+}
+
+.img-container {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.section-list-img {
+  height: 28rem;
+  width: 82rem;
+  transition: all 0.3s ease-out;
+}
+
+.opacity{
+  opacity: 0.1;
+}
+
+.playlist-name:link,
+.playlist-name:visited {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: black;
+}
+
+.playlist-name:active,
+.playlist-name:hover{
+  color: #31C27C;
+}
+
+.play-times {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: #878787;
+}
+
+.left-btn {
+  border: none;
+  background-color: transparent;
+  padding: 3rem 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-150%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: rgba(62, 38, 31, 0.2);
+    //backdrop-filter: blur(10px);
+  }
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.right-btn {
+  border: none;
+  background-color: transparent;
+  padding: 3rem 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(150%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: rgba(62, 38, 31, 0.2);
+    //backdrop-filter: blur(10px);
+  }
+  transition: all 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.left-icon {
+  color: #d6d6d6;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.right-icon {
+  color: #d6d6d6;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.img-box-sub1{
+  display: flex;
+  gap: 1.4rem;
+  //transition: all 0.4s ease-out;
+  transition: opacity 2s ease-out;
+}
+
+
+.figure-out{
+  width: 100%;
+}
+
+.download{
+  background: url("img/hero/download.png") no-repeat;
+  width: 25.4rem;
+  height: 28rem;
+}
+
+.download-btn{
+  height: 5.6rem;
+  width: 21.5rem;
+  border: none;
+  margin:  18.6rem 0 0 1.9rem;
+  //border-radius: 0.5rem;
+  background: url("img/hero/download.png") no-repeat;
+  background-position: 0 9999px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.download-btn:hover{
+  background-position: 0 -290px;
+}
+
+.section-box{
+  display: flex;
+  gap: 0;
+  position: relative;
+}
+
+.downloadP{
+  color: #8d8d8d;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+}
