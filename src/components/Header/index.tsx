@@ -47,32 +47,25 @@ const Header = () => {
                 </ul>
             </nav>
         </div>
-            <hr className={s.headerHr}/>
             <div className={s.secondHeader}>
                 <ul className={s.secondNavList}>
-                    <li>
-                        <a href="#" className={s.secondNavLink}>首页</a>
-                    </li>
-                    <li>
-                        <a href="#" className={s.secondNavLink}>歌手</a>
-                    </li>
-                    <li>
-                        <a href="#" className={s.secondNavLink}>新碟</a>
+                    <li className={s.secondNavLiSelected}>
+                        <a href="#" className={clsx(s.secondNavLink,s.secondNavLinkSelected)}>推荐</a>
                     </li>
                     <li>
                         <a href="#" className={s.secondNavLink}>排行榜</a>
                     </li>
                     <li>
-                        <a href="#" className={s.secondNavLink}>分类歌单</a>
+                        <a href="#" className={s.secondNavLink}>歌单</a>
                     </li>
                     <li>
-                        <a href="#" className={s.secondNavLink}>雷达</a>
+                        <a href="#" className={s.secondNavLink}>播客</a>
                     </li>
                     <li>
-                        <a href="#" className={s.secondNavLink}>MV</a>
+                        <a href="#" className={s.secondNavLink}>歌手</a>
                     </li>
                     <li>
-                        <a href="#" className={s.secondNavLink}>数字专辑</a>
+                        <a href="#" className={s.secondNavLink}>新蝶上架</a>
                     </li>
                 </ul>
             </div>
