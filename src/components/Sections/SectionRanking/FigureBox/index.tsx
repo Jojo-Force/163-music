@@ -4,19 +4,22 @@ interface FigureBoxProps {
     imgSrc: string;
     songName: string;
     singerNames: string[];
-    songTimes: string;
+    songTime: string;
 }
 
-const FigureBox = ({imgSrc,songName,singerNames,songTimes}:FigureBoxProps) => {
+const FigureBox = ({imgSrc,songName,singerNames,songTime}:FigureBoxProps) => {
     return (
         <figure className={s.figureOut}>
+
             <div className={s.imgContainer}>
                 <img
-                    className={s.sectionMvImg}
+                    className={s.sectionNewCdImg}
                     alt="song"
                     src={imgSrc}
                 />
+                <a className={s.msk} href="#"></a>
             </div>
+
             <a className={s.songName} href="#">{songName}</a>
             <div className={s.singerNames}>
                 {singerNames.map((name, index) => (
@@ -26,8 +29,6 @@ const FigureBox = ({imgSrc,songName,singerNames,songTimes}:FigureBoxProps) => {
                     </>
                 ))}
             </div>
-            <p className={s.songTimes} href="#">
-                <ion-icon name="videocam-outline"></ion-icon>{songTimes}</p>
         </figure>
     )
 }

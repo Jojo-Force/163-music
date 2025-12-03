@@ -1,9 +1,7 @@
 import SectionHero from "@/components/Sections/SectionHero";
-import SectionNewSong from "../Sections/SectionNewSong";
 import SectionRecommend from "../Sections/SectionRecommend";
 import SectionNewCD from "../Sections/SectionNewCD";
-import SectionRating from "../Sections/SectionRating";
-import SectionMV from "../Sections/SectionMV";
+import SectionRanking from "../Sections/SectionRanking";
 import s from './local.module.scss'
 import SectionAside from "../Sections/SectionAside";
 
@@ -13,12 +11,9 @@ const Main =()=>{
             <SectionHero/>
             <div className={s.main}>
                 <div className={s.mainLeft}>
-                <SectionRecommend/>
-                <SectionNewCD/>
-
-                {/*<SectionNewSong/>*/}
-                {/*<SectionRating/>*/}
-                {/*<SectionMV/>*/}
+                    <SectionRecommend/>
+                    <SectionNewCD/>
+                    <SectionRanking/>
                 </div>
                 <div className={s.mainRight}>
                     <SectionAside/>
