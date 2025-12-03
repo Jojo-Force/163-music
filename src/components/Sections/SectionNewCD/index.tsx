@@ -73,7 +73,7 @@ const SectionNewCD = () => {
   const section = useRef<HTMLDivElement>(null);
   const imgBoxSub1 = useRef<HTMLDivElement>(null);
   const imgBox = useRef<HTMLDivElement>(null);
-    const [len, setLen] = useState(820); // 初始值可保留
+    const [len, setLen] = useState(0); // 初始值可保留
   const childNum = 5;
   let moveLen = -len;
 
@@ -91,12 +91,17 @@ const SectionNewCD = () => {
     const chirdWidth = sub.children[0].offsetWidth;
     //获得len
     const totalLen = chirdWidth * childNum + gap * (childNum);
-      moveLen = -totalLen;
+    moveLen = -totalLen;
     setLen(totalLen);
-    console.log("moveLen",moveLen)
+    console.log("chirdWidth",chirdWidth)
     console.log("gap1:", gap);
-    console.log("len1:", len);
-    imgBox.current.style.width = len+"px";
+    console.log("totalLen:", totalLen);
+    imgBox.current.style.width = totalLen+"px";
+    imgBoxSub1.current.style.transition = 'none';
+    imgBoxSub1.current.style.transform = `translate(${moveLen}px, 0)`;
+      setTimeout(() => {
+          imgBoxSub1.current.style.transition = 'transform 1s ease-out';
+      },50);
 
   };
     useEffect(() => {
@@ -151,34 +156,37 @@ const SectionNewCD = () => {
 
   return (
     <section ref={section} className={s.sectionNewCd}>
-      <button className={s.leftBtn} onClick={leftBtnClick}>
-        <ion-icon class={s.leftIcon} name="chevron-back-outline"></ion-icon>
-      </button>
-      <button className={s.rightBtn} onClick={rightBtnClick}>
-        <ion-icon
-          class={s.rightIcon}
-          name="chevron-forward-outline"
-        ></ion-icon>
-      </button>
+
 
       <div className={s.secondLinkFlexbox}>
           <a className={s.headingLink} href="#">新碟上架</a>
               <button className={s.moreBtn}>
                   更多<i className={s.moreIcon}></i></button>
       </div>
-      <div ref={imgBox} className={s.imgBox}>
-        <div ref={imgBoxSub1} className={s.imgBoxSub1}>
-          {imgs.map((img, index) => (
-            <FigureBox
-              imgSrc={img.imgSrc}
-              songName={img.songName}
-              singerNames={img.singerNames}
-              songTime={img.songTime}
-            ></FigureBox>
-          ))}
-        </div>
+        <div className={s.imgBigBox}>
+            <button className={s.leftBtn} onClick={leftBtnClick}>
+                <ion-icon className={s.leftIcon} name="chevron-back-outline"></ion-icon>
+            </button>
+            <button className={s.rightBtn} onClick={rightBtnClick}>
+                <ion-icon
+                    className={s.rightIcon}
+                    name="chevron-forward-outline"
+                ></ion-icon>
+            </button>
+            <div ref={imgBox} className={s.imgBox}>
+                <div ref={imgBoxSub1} className={s.imgBoxSub1}>
+                    {imgs.map((img, index) => (
+                        <FigureBox
+                            imgSrc={img.imgSrc}
+                            songName={img.songName}
+                            singerNames={img.singerNames}
+                            songTime={img.songTime}
+                        ></FigureBox>
+                    ))}
+                </div>
 
-      </div>
+            </div>
+        </div>
     </section>
   );
 };
