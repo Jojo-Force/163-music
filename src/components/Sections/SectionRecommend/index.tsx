@@ -1,156 +1,104 @@
 import FigureBox from "./FigureBox";
 import s from "./local.module.scss";
-import { useRef } from "react";
+import {useEffect, useRef, useState} from "react";
 
-const imgs = [
-      {
-          imgSrc: "img/recommend/1.jpg",
-          classification: "说唱",
-          title: "TizzyT全新专辑正式上线",
-      },
+const imgsOrigin = [
+  {
+    imgSrc: "img/recommend/1.jpg",
+    songName: "经典粤语合集【无损音质】黑胶唱片会员专属",
+      songTime: "9184万",
+      radio: "0",
+  },
     {
         imgSrc: "img/recommend/2.jpg",
-        classification: "商城",
-        title: "张艺兴「大航海·无远弗届」巡演礼盒",
+        songName: "不得了！这些英文歌的热评信息量好大……",
+        songTime: "2590万",
+        radio: "0",
     },
     {
         imgSrc: "img/recommend/3.jpg",
-        classification: "星光卡",
-        title: "RIIZE典藏星光卡正式上线",
+        songName: "【万评电音】抬头，已是一片星海",
+        songTime: "3123万",
+        radio: "1",
     },
     {
-        imgSrc: "img/recommend/1.jpg",
-        classification: "说唱",
-        title: "TizzyT全新专辑正式上线",
+        imgSrc: "img/recommend/4.jpg",
+        songName: "杨丞琳聊《无须归还》：爱是一路仁至义尽",
+        songTime: "3526",
+        radio: "0",
     },
     {
-        imgSrc: "img/recommend/2.jpg",
-        classification: "商城",
-        title: "张艺兴「大航海·无远弗届」巡演礼盒",
+        imgSrc: "img/recommend/5.jpg",
+        songName: "【B.G.M.】游戏必备战歌",
+        songTime: "4103万",
+        radio: "0",
     },
     {
-        imgSrc: "img/recommend/3.jpg",
-        classification: "星光卡",
-        title: "RIIZE典藏星光卡正式上线",
+        imgSrc: "img/recommend/6.jpg",
+        songName: "万倍返还 第001集 这堆圣级功法，勉强够我烧整个冬天",
+        songTime: "128万",
+        radio: "1",
     },
     {
-        imgSrc: "img/recommend/1.jpg",
-        classification: "说唱",
-        title: "TizzyT全新专辑正式上线",
+        imgSrc: "img/recommend/7.jpg",
+        songName: "假如能回到过去，你想做什么",
+        songTime: "2658万",
+        radio: "0",
     },
     {
-        imgSrc: "img/recommend/2.jpg",
-        classification: "商城",
-        title: "张艺兴「大航海·无远弗届」巡演礼盒",
-    },
-    {
-        imgSrc: "img/recommend/3.jpg",
-        classification: "星光卡",
-        title: "RIIZE典藏星光卡正式上线",
+        imgSrc: "img/recommend/8.jpg",
+        songName: "快乐儿歌《蓝精灵》",
+        songTime: "1961万",
+        radio: "0",
     },
 ];
+
+const imgs = [
+    ...imgsOrigin,
+];
+
 const SectionRecommend = () => {
   const section = useRef<HTMLDivElement>(null);
   const imgBoxSub1 = useRef<HTMLDivElement>(null);
-  let len = 820;
-  const childNum = 3;
-  let moveLen = 0;
-  const maxPage = 3 - 1;
-  let curPage = 0;
+  const imgBox = useRef<HTMLDivElement>(null);
 
-  const getLen = () => {
-    const sub = imgBoxSub1.current;
-    const computedStyle = window.getComputedStyle(sub);
-    //获得gap
-    const gap = parseInt(computedStyle.gap, 10);
-    //获得子元素宽度
-    const chirdWidth = sub.children[0].offsetWidth;
-    //获得len
-    len = chirdWidth * childNum + gap * childNum;
-    console.log("gap:", gap);
-    console.log("len:", len);
-  };
 
-  const rightBtnClick = () => {
-    getLen();
-    const dots = section.current.querySelector(".dots");
-    dots.children[curPage].classList.remove("dot-select");
-    if (curPage === maxPage) {
-      curPage = 0;
-    } else {
-      curPage += 1;
-    }
-    moveLen = curPage * -len;
-    dots.children[curPage].classList.add("dot-select");
-    const sub1 = imgBoxSub1.current;
-    sub1.style.transform = `translate(${moveLen}px, 0)`;
-
-    console.log(curPage);
-  };
-
-  const leftBtnClick = () => {
-    const dots = section.current.querySelector(".dots");
-    dots.children[curPage].classList.remove("dot-select");
-    if (curPage === 0) {
-      curPage = maxPage;
-    } else {
-      curPage -= 1;
-    }
-    moveLen = curPage * -len;
-    dots.children[curPage].classList.add("dot-select");
-    const sub1 = imgBoxSub1.current;
-    sub1.style.transform = `translate(${moveLen}px, 0)`;
-
-    console.log(curPage);
-  };
-
-  const dotClick = (event) => {
-    /*取消原来选中*/
-    const child = section.current.querySelector(".dot-select");
-    child.classList.remove("dot-select");
-
-    /*当前点击按钮获得选中*/
-    event.currentTarget.classList.add("dot-select");
-    const parent = section.current.querySelector(".dots");
-    const index = Array.from(parent.children).indexOf(event.currentTarget);
-
-    /*计算curPage和移动距离*/
-    curPage = index;
-    moveLen = curPage * -len;
-
-    const sub1 = imgBoxSub1.current;
-    sub1.style.transform = `translate(${moveLen}px, 0)`;
-  };
 
   return (
     <section ref={section} className={s.sectionRecommend}>
-      <button className={s.leftBtn} onClick={leftBtnClick}>
-        <ion-icon class={s.leftIcon} name="chevron-back-outline"></ion-icon>
-      </button>
-      <button className={s.rightBtn} onClick={rightBtnClick}>
-        <ion-icon
-          class={s.rightIcon}
-          name="chevron-forward-outline"
-        ></ion-icon>
-      </button>
-      <h1>精彩推荐</h1>
-      <div className={s.imgBox}>
-        <div ref={imgBoxSub1} className={s.imgBoxSub1}>
-          {imgs.map((img, index) => (
-            <FigureBox
-              imgSrc={img.imgSrc}
-              classification={img.classification}
-              title={img.title}
-            ></FigureBox>
-          ))}
+
+
+      <div className={s.secondLinkFlexbox}>
+          <div className={s.secondLinkInnerBox}>
+              <a className={s.headingLink} href="#">新碟上架</a>
+              <a className={s.headingSubLink} href="#">华语   </a>
+              <span>|</span>
+              <a className={s.headingSubLink} href="#">流行</a>
+              <span>|</span>
+              <a className={s.headingSubLink} href="#">摇滚</a>
+              <span>|</span>
+              <a className={s.headingSubLink} href="#">民谣</a>
+              <span>|</span>
+              <a className={s.headingSubLink} href="#">电子</a>
+          </div>
+              <button className={s.moreBtn}>
+                  更多<i className={s.moreIcon}></i></button>
+      </div>
+
+        <div ref={imgBox} className={s.imgBox}>
+            <div ref={imgBoxSub1} className={s.imgBoxSub1}>
+                {imgs.map((img, index) => (
+                    <FigureBox
+                        imgSrc={img.imgSrc}
+                        songName={img.songName}
+                        songTime={img.songTime}
+                        radio={img.radio}
+                    ></FigureBox>
+                ))}
+            </div>
+
         </div>
 
-        <div className="dots">
-          <button className="dot dot-select" onClick={dotClick}></button>
-          <button className="dot" onClick={dotClick}></button>
-          <button className="dot" onClick={dotClick}></button>
-        </div>
-      </div>
     </section>
   );
 };

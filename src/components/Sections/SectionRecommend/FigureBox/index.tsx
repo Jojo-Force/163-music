@@ -2,22 +2,34 @@ import s from "../local.module.scss"
 
 interface FigureBoxProps {
     imgSrc: string;
-    classification: string;
-    title: string;
+    songName: string;
+    radio: string;
+    songTime: string;
 }
 
-const FigureBox = ({imgSrc,
-                       classification,title}:FigureBoxProps) => {
+const FigureBox = ({imgSrc,songName,songTime,radio}:FigureBoxProps) => {
     return (
         <figure className={s.figureOut}>
-            <div className={s.container}>
+
+            <div className={s.imgContainer}>
                 <img
-                    className={s.sectionRecommendImg}
+                    className={s.sectionNewCdImg}
                     alt="song"
                     src={imgSrc}
                 />
+                <a className={s.msk} href="#"></a>
+                <div className={s.playBox}>
+                    <div className={s.playBoxInner}>
+                        <i className={s.headsetIcon}></i>
+                        <span className={s.playTimes}>{songTime}</span>
+                    </div>
+                    <i className={s.playIcon}></i>
+                </div>
             </div>
-            <p className={s.figureTitle}><span className={s.classification}>{classification}</span>{title}</p>
+
+
+            {radio === "0" && <a className={s.songName} href="#">{songName}</a>}
+            {radio === "1" && <a className={s.songName} href="#"><i className={s.radioIcon}></i>{" "+songName}</a>}
         </figure>
     )
 }
