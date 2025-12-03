@@ -9,9 +9,9 @@ const Main =()=>{
     return (
         <main>
             <SectionHero/>
-            <SectionNewSong/>
-            <SectionRecommend/>
             <SectionNewCD/>
+            <SectionRecommend/>
+            <SectionNewSong/>
             <SectionRating/>
             <SectionMV/>
         </main>

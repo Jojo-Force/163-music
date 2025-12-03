@@ -116,7 +116,7 @@
 }
 
 .section-new-cd-img {
-  height: 15rem;
+  height: 10rem;
   transition: all 0.3s ease-out;
 }
 
@@ -183,11 +183,10 @@
 }
 
 .img-box-sub1 {
-  display: grid;
+  display: flex;
   gap: 1.4rem;
-  transition: all 0.4s ease-out;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-flow: column;
+  transition: all 1s ease-out;
+  transform: translate(-820px,0);
 }
 
 .img-box {
@@ -201,16 +200,16 @@
 .more-icon{
   width: 1.2rem;
   height: 1.2rem;
-  color: #555555;
+  background: url("img/icon/index.png");
+  background-position: 0 -24rem;
 }
 
 .more-btn {
-  position: absolute;
   background-color: inherit;
   border: none;
   padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-  right:-29rem;
+  font-size: 1.2rem;
+  color: #666666;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -233,4 +232,41 @@
   color: #999999;
   height: 3.2rem;
   width: 3.2rem;
+}
+
+.heading-link:link,
+.heading-link:visited{
+  display: inline-block;
+  font-size: 2rem;
+  color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.heading-link:active,
+.heading-link:hover{
+
+}
+
+.second-link-flexbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70rem;
+  height: 33px;
+  padding: 0 10px 0 34px;
+  border-bottom: 2px solid #C10D0C;
+  background: url("img/icon/index.png") no-repeat;
+  background-position: -225px -156px;
+}
+
+
+.msk{
+  position: absolute;
+  width: 11.8rem;
+  height: 10.0rem;
+  top:0;
+  left: 0;
+  background: url("img/icon/coverall.png") no-repeat;
+  background-position: 0 -570px;
 }

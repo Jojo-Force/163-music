@@ -10,13 +10,16 @@ interface FigureBoxProps {
 const FigureBox = ({imgSrc,songName,singerNames,songTime}:FigureBoxProps) => {
     return (
         <figure className={s.figureOut}>
+
             <div className={s.imgContainer}>
                 <img
                     className={s.sectionNewCdImg}
                     alt="song"
                     src={imgSrc}
                 />
+                <a className={s.msk} href="#"></a>
             </div>
+
             <a className={s.songName} href="#">{songName}</a>
             <div className={s.singerNames}>
                 {singerNames.map((name, index) => (
