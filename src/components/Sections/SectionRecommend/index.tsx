@@ -70,7 +70,7 @@ const SectionRecommend = () => {
 
       <div className={s.secondLinkFlexbox}>
           <div className={s.secondLinkInnerBox}>
-              <a className={s.headingLink} href="#">新碟上架</a>
+              <a className={s.headingLink} href="#">热门推荐</a>
               <a className={s.headingSubLink} href="#">华语   </a>
               <span>|</span>
               <a className={s.headingSubLink} href="#">流行</a>
