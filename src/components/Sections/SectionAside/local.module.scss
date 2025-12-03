@@ -1,0 +1,329 @@
+/*************************************************/
+/*歌单推荐 区*/
+/*************************************************/
+.section-aside {
+  background: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  flex-direction: column;
+  //border: 1px solid #d3d3d3;
+}
+
+.img-box {
+  display: flex;
+  gap: 1.4rem;
+  width: 806px;
+  overflow: hidden;
+}
+
+.img-container {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.section-list-img {
+  height: 28rem;
+  width: 82rem;
+  transition: all 0.3s ease-out;
+}
+
+.opacity{
+  opacity: 0.1;
+}
+
+.playlist-name:link,
+.playlist-name:visited {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: black;
+}
+
+.playlist-name:active,
+.playlist-name:hover{
+  color: #31C27C;
+}
+
+.play-times {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: #878787;
+}
+
+.left-btn {
+  border: none;
+  background-color: transparent;
+  padding: 3rem 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-150%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: rgba(62, 38, 31, 0.2);
+    //backdrop-filter: blur(10px);
+  }
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.right-btn {
+  border: none;
+  background-color: transparent;
+  padding: 3rem 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(150%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: rgba(62, 38, 31, 0.2);
+    //backdrop-filter: blur(10px);
+  }
+  transition: all 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.left-icon {
+  color: #d6d6d6;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.right-icon {
+  color: #d6d6d6;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.img-box-sub1{
+  display: flex;
+  gap: 1.4rem;
+  //transition: all 0.4s ease-out;
+  transition: opacity 2s ease-out;
+}
+
+
+.figure-out{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+}
+
+.download{
+  background: url("img/hero/download.png") no-repeat;
+  width: 25.4rem;
+  height: 28rem;
+}
+
+.download-btn{
+  height: 5.6rem;
+  width: 21.5rem;
+  border: none;
+  margin:  18.6rem 0 0 1.9rem;
+  //border-radius: 0.5rem;
+  background: url("img/hero/download.png") no-repeat;
+  background-position: 0 9999px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.download-btn:hover{
+  background-position: 0 -290px;
+}
+
+.section-box{
+  display: flex;
+  gap: 0;
+  position: relative;
+}
+
+.downloadP{
+  color: #8d8d8d;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+}
+
+.vip-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+.vip-card-img{
+  width: 100%;
+}
+
+.vip-p{
+  color: #666666;
+  line-height: 1.5;
+}
+
+.vip-login-btn{
+  width: 100px;
+  height: 31px;
+  background: url("img/aside/index.png");
+  background-position: 0 -195px;
+  border: none;
+  color: #fff;
+}
+.vip-login-btn:hover{
+  background-position: -110px -195px;
+}
+
+.vip-inner-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2.4rem;
+  background: url("img/aside/index.png");
+  background-position: 0 0;
+  padding: 0 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+
+.heading-link:link,
+.heading-link:visited{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap
+}
+
+.heading-link:active,
+.heading-link:hover{
+
+}
+
+.second-link-flexbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //gap: 8rem;
+  height: 33px;
+  border-bottom: 2px solid #eaeaea;
+  width: 100%;
+}
+
+.more-icon{
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url("img/icon/index.png");
+  background-position: 0 -24rem;
+}
+
+.more-btn {
+  background-color: inherit;
+  white-space: nowrap;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  color: #666666;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.singer-list{
+  width: 100%;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.section-singer-img {
+  height: 6.2rem;
+  width: 6.2rem;
+}
+
+.singer-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+  gap: 1.2rem;
+
+}
+
+.singer-name{
+  color: #333333;
+  font-size: 1.3rem;
+  font-weight: 600;
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+}
+
+.disc{
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  width: 11rem;
+}
+
+.register-music-man{
+  //color: #333;
+  background-color: red;
+  border: none;
+  height: 31px;
+  line-height: 31px;
+  //vertical-align: top;
+  //text-align: center;
+  cursor: pointer;
+  background: url("img/icon/button2.png");
+  background-position: right -100px;
+  padding: 0 5px 0 0;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+}
+
+.register-music-man:hover{
+  background-position: right -182px;
+}
+.register-music-man i{
+  display: inline-block;
+  height: 31px;
+  line-height: 31px;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 0 15px 0 20px;
+  pointer-events: none;
+  background: url("img/icon/button2.png");
+  background-position: 0 -59px;
+  font-style: normal;
+}
+
+.register-music-man:hover i{
+  background-position: 0 -141px;
+}

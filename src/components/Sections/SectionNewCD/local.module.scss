@@ -1,12 +1,14 @@
 .section-new-cd {
   background-color: #fafafa;
-  height: 60rem;
+  //height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
   position: relative;
+  //padding: 0 2.4rem;
+  padding-top: 3.6rem;
 }
 
 .figure-out {
@@ -131,7 +133,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(50%, -50%);
+  transform: translate(0%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +206,7 @@
 
 .more-btn {
   background-color: inherit;
+  white-space: nowrap;
   border: none;
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
@@ -239,6 +242,7 @@
   color: #333333;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap
 }
 
 .heading-link:active,
@@ -250,7 +254,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 70rem;
+  gap: 50rem;
   height: 33px;
   padding: 0 10px 0 34px;
   border-bottom: 2px solid #C10D0C;
@@ -277,8 +281,8 @@
   flex-direction: column;
   position: relative;
   background-color: #f5f5f5;
-  padding-left: 3.4rem;
-  padding-right: 2.4rem;
+  padding-left: 1.6rem;
+  padding-right: 0rem;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   border: 1px solid #d3d3d3;

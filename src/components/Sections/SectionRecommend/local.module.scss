@@ -1,12 +1,13 @@
 .section-recommend {
   background-color: #fafafa;
-  height: 60rem;
+  //height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
   position: relative;
+  margin-top: 1.2rem;
 }
 
 .figure-out {
@@ -135,7 +136,7 @@
 
 .img-box-sub1 {
   display: grid;
-  gap: 1.4rem;
+  gap: 4.4rem;
   transition: all 1s ease-out;
   grid-template-rows: 1fr 1fr;
   grid-auto-flow: column;
@@ -216,12 +217,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 70rem;
+  gap: 25rem;
   height: 33px;
   padding: 0 10px 0 34px;
   border-bottom: 2px solid #C10D0C;
   background: url("img/icon/index.png") no-repeat;
   background-position: -225px -156px;
+
 }
 
 
