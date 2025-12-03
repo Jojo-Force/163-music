@@ -258,6 +258,7 @@
 .dl{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #c7c7c7;
 }
 
 .dt{
@@ -270,12 +271,30 @@
 
 .dt-line{
   width: 23rem;
+  border-right:  1px solid #c7c7c7;;
+}
+
+.dl .dt-line:last-child{
+  border-right:  none;
 }
 
 .dt-img{
   width: 8rem;
   height: 8rem;
+  position: relative;
 }
+
+//.dt-img::after {
+//  content: '';
+//  position: absolute;
+//  bottom: -100px;
+//  left: 0;
+//  width: 100%;
+//  height: 10px;
+//  background: linear-gradient(to bottom, rgba(255,0,0,0.2), transparent);
+//  filter: blur(4px);
+//  z-index: 999;
+//}
 
 .msk{
   position: absolute;
@@ -345,9 +364,13 @@
 }
 
 .dd{
-  padding: 0.5rem 1.2rem;
-  width: 23rem;
+  width: 100%;
+  padding: 0 1.2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
+
 
 .dt-line dd:nth-child(odd) {
   background-color: #f4f4f4;
@@ -390,8 +413,9 @@
   font-size: 1.2rem;
   color: #000;
   cursor: pointer;
-  width: 15rem;
-  height: 2rem;
+  width: auto;
+  //height: 2rem;
+  margin-top: 0.2rem;
   text-decoration: none;
   white-space: nowrap; /* 禁止换行 */
   overflow: hidden; /* 隐藏溢出内容 */
@@ -427,4 +451,81 @@
 
 .check-more-link:active,
 .check-more-link:hover{
+}
+
+.songSpanTen{
+  padding-left: 0.9rem;
+}
+
+.pad{
+  display: none;
+  //width: rem;
+
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  padding-left: 0.5rem;
+  margin-left: auto;
+}
+
+.dd:hover .pad{
+  display: flex;
+}
+
+.play-icon2:link,
+.play-icon2:visited{
+  display: inline-block;
+  font-size: 2rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  background: url('img/ranking/index.png') no-repeat 0 9999px;
+  background-position: -267px -268px;
+}
+.play-icon2:active,
+.play-icon2:hover{
+  background-position: -267px -288px;
+}
+
+.plus-icon2:link,
+.plus-icon2:visited{
+  margin-top: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  background: url('img/ranking/icon.png') no-repeat 0 9999px;
+  background-position: 0 -700px;
+}
+
+.plus-icon:active,
+.plus-icon:hover{
+  background-position: -22px -700px;
+}
+
+.add-icon2:link,
+.add-icon2:visited{
+  display: inline-block;
+  font-size: 2rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  background: url('img/ranking/index.png') no-repeat 0 9999px;
+  background-position: -297px -268px;
+}
+
+.add-icon2:active,
+.add-icon2:hover{
+  background-position: -297px -288px;
 }

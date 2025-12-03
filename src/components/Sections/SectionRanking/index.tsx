@@ -1,6 +1,7 @@
 import FigureBox from "./FigureBox";
 import s from "./local.module.scss";
 import {useRef} from "react";
+import clsx from "clsx";
 
 const imgsOrigin = [
   {
@@ -94,28 +95,154 @@ const SectionRanking = () => {
                         <a className={s.dtAdd} href="#"></a>
                     </div>
                 </dt>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.firstSpan}>1</span>Zoo (From "Zootopia 2"/Soundtrack Version)</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.secondSpan}>2</span>桃子</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.thirdSpan}>3</span>颗秒</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.songSpan}>4</span>Try Everything</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.songSpan}>5</span>普通人生</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.songSpan}>6</span>Zoo (From "Zootopia 2"/Soundtrack Version)</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.songSpan}>7</span>疯狂动物城2中文版</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.songSpan}>8</span>盐津-雾-盐津-雾-Yanjin Fog</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.songSpan}>9</span>可惜你不懂</a></dd>
-                <dd className={s.dd}><a className={s.songLink} href="#"><span className={s.songSpan}>10</span>海屿你</a></dd>
+                <dd className={s.dd}><span className={s.firstSpan}>1</span><a className={s.songLink} href="#">Zoo (From "Zootopia 2"/Soundtrack Version)</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.secondSpan}>2</span><a className={s.songLink} href="#">桃子</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.thirdSpan}>3</span><a className={s.songLink} href="#">颗秒</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>4</span><a className={s.songLink} href="#">Try Everything</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>5</span><a className={s.songLink} href="#">普通人生</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>6</span><a className={s.songLink} href="#">Zoo (From "Zootopia 2"/Soundtrack Version)</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>7</span><a className={s.songLink} href="#">疯狂动物城2中文版</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>8</span><a className={s.songLink} href="#">盐津-雾-盐津-雾-Yanjin Fog</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>9</span><a className={s.songLink} href="#">可惜你不懂</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={clsx(s.songSpan,s.songSpanTen)}>10</span><a className={s.songLink} href="#">海屿你</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
                 <dd className={s.dd}><a className={s.checkMoreLink} href="#">{"查看全部>"}</a></dd>
             </div>
 
-            {/*<div>*/}
-            {/*    <dt>CSS</dt>*/}
-            {/*    <dd>层叠样式表，用于控制网页的外观和布局。</dd>*/}
-            {/*</div>*/}
+            <div className={s.dtLine}>
+                <dt className={s.dt}>
+                    <img className={s.dtImg} src='img/ranking/2.jpg' alt="ranking"/>
+                    <a className={s.msk} href="#"></a>
+                    <div className={s.dtBox}>
+                        <a className={s.dtHeading} href="#">新歌榜</a>
+                        <a className={s.dtPlay} href="#"></a>
+                        <a className={s.dtAdd} href="#"></a>
+                    </div>
+                </dt>
+                <dd className={s.dd}><span className={s.firstSpan}>1</span><a className={s.songLink} href="#">Zoo (From "Zootopia 2"/Soundtrack Version)</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.secondSpan}>2</span><a className={s.songLink} href="#">桃子</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.thirdSpan}>3</span><a className={s.songLink} href="#">颗秒</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>4</span><a className={s.songLink} href="#">Try Everything</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>5</span><a className={s.songLink} href="#">普通人生</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>6</span><a className={s.songLink} href="#">Zoo (From "Zootopia 2"/Soundtrack Version)</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>7</span><a className={s.songLink} href="#">疯狂动物城2中文版</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>8</span><a className={s.songLink} href="#">盐津-雾-盐津-雾-Yanjin Fog</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>9</span><a className={s.songLink} href="#">可惜你不懂</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={clsx(s.songSpan,s.songSpanTen)}>10</span><a className={s.songLink} href="#">海屿你</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><a className={s.checkMoreLink} href="#">{"查看全部>"}</a></dd>
+            </div>
 
-            {/*<div>*/}
-            {/*    <dt>JavaScript</dt>*/}
-            {/*    <dd>一种脚本语言，用于实现网页的交互功能。</dd>*/}
-            {/*</div>*/}
+            <div className={s.dtLine}>
+                <dt className={s.dt}>
+                    <img className={s.dtImg} src='img/ranking/3.jpg' alt="ranking"/>
+                    <a className={s.msk} href="#"></a>
+                    <div className={s.dtBox}>
+                        <a className={s.dtHeading} href="#">原创榜</a>
+                        <a className={s.dtPlay} href="#"></a>
+                        <a className={s.dtAdd} href="#"></a>
+                    </div>
+                </dt>
+                <dd className={s.dd}><span className={s.firstSpan}>1</span><a className={s.songLink} href="#">Zoo (From "Zootopia 2"/Soundtrack Version)</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.secondSpan}>2</span><a className={s.songLink} href="#">桃子</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.thirdSpan}>3</span><a className={s.songLink} href="#">颗秒</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>4</span><a className={s.songLink} href="#">Try Everything</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>5</span><a className={s.songLink} href="#">普通人生</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>6</span><a className={s.songLink} href="#">Zoo (From "Zootopia 2"/Soundtrack Version)</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>7</span><a className={s.songLink} href="#">疯狂动物城2中文版</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>8</span><a className={s.songLink} href="#">盐津-雾-盐津-雾-Yanjin Fog</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={s.songSpan}>9</span><a className={s.songLink} href="#">可惜你不懂</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><span className={clsx(s.songSpan,s.songSpanTen)}>10</span><a className={s.songLink} href="#">海屿你</a>
+                    <div className={s.pad}><a className={s.playIcon2} href="#"></a><a className={s.plusIcon2} href="#"></a><a className={s.addIcon2} href="#"></a>
+                    </div>
+                </dd>
+                <dd className={s.dd}><a className={s.checkMoreLink} href="#">{"查看全部>"}</a></dd>
+            </div>
         </dl>
 
     </section>
