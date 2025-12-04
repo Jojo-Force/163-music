@@ -259,6 +259,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border: 1px solid #c7c7c7;
+  margin-bottom: 3.6rem;
 }
 
 .dt{
@@ -282,6 +283,7 @@
   width: 8rem;
   height: 8rem;
   position: relative;
+  box-shadow: 0 0.8rem 0.9rem rgba(0, 0, 0, 10%);
 }
 
 //.dt-img::after {
@@ -451,6 +453,7 @@
 
 .check-more-link:active,
 .check-more-link:hover{
+  text-decoration: underline;
 }
 
 .songSpanTen{
