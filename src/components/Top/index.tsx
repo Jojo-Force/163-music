@@ -8,7 +8,6 @@ const Top = () => {
         const handleScroll = () =>{
             const isTop = window.scrollY <=1;
             setIsAtTop(isTop);
-            console.log(isTop)
         };
 
         handleScroll();
