@@ -1,5 +1,26 @@
 import s from './local.module.scss'
+import FigureBox2 from "../SectionLeft/FigureBox2";
 
+const data= [
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    }
+]
 const SectionRight = () =>{
     return (
         <div className={s.sectionRight}>
@@ -36,12 +57,23 @@ const SectionRight = () =>{
                         </tr>
                     </thead>
                     <tbody className={s.tbody}>
-                    <tr>
-                        <td><div className={s.firstColumn}><span>1</span><span className={s.zeroIcon}></span></div></td>
-                        <td><div className={s.secondColumn}><img src={"img/rankingpage/img1"}/><span></span><span></span></div></td>
-                        <td>03:10</td>
-                        <td><a href='#'>Disney</a>/<a href='#'>Shaakira</a></td>
-                    </tr>
+                    {data.map((d,index)=>(
+                        <tr>
+                            <td><div className={s.firstColumn}><span>{index}</span><span className={s.zeroIcon}>0</span></div></td>
+                            <td><div className={s.secondColumn}><img src={d.imgSrc}/><span className={s.playIcon2}></span><a className={s.titleLink} href="#">{d.title}</a></div></td>
+                            <td>{d.time}</td>
+                            <td>
+                                {
+                                    d.singers.map((singer,index) =>(
+                                        <>
+                                            <a className={s.titleLink} href='#'>{singer}</a>
+                                            {index < d.singers.length - 1 && <> / </>}
+                                        </>
+                                    ))
+                                }
+                            </td>
+                        </tr>
+                    ))}
                     </tbody>
                 </table>
 

@@ -294,3 +294,54 @@ justify-content: center;
 .tbody tr:nth-child(even){
   background-color: #ffffff;
 }
+
+.zero-icon{
+  display: inline-block;
+  line-height: 17px;
+  width: 32px;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: -74px -268px;
+  padding-left: 8px;
+  font-size: 0.9rem;
+}
+
+.firstColumn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a5a5a5;
+}
+
+.firstColumn span:nth-child(1){
+  margin-left: 12px;
+  font-size: 1rem;
+}
+
+.play-icon2{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 -103px;
+}
+
+.title-link{
+  text-decoration: none;
+  color: #333333;
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  width: 100px;
+}
+
+.second-column{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+
+.tbody tr{
+  text-align: center;
+}
