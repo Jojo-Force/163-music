@@ -2,7 +2,12 @@
 .section-right{
   //background: red;
   //height: 120rem;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  align-items: center;
   background-color: #ffffff;
+  color: #333;
 }
 
 .head-img{
@@ -30,6 +35,11 @@
   background-position: -18px -682px;
 }
 
+.sub-title{
+  display: flex;
+  align-items: center;
+  gap:0.6rem;
+}
 .sub-title span{
   color: #999999;
 }
@@ -214,7 +224,73 @@
   font-style: normal;
 }
 
+.song-heading-box{
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
 .head-img-box{
   border: 1px solid #ccc;
   padding: 0.2rem;
+}
+
+.song-heading{
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.song-heading2{
+  display: inline-block;
+  margin-left: 2.3rem;
+}
+
+.song-heading3{
+  display: inline-block;
+  margin-left: auto;
+}
+
+.table{
+  border-top: 2px solid #c20c0c;
+  width: 90%;
+  margin-top: 1.2rem;
+  border-collapse: collapse;
+}
+
+.thead tr{
+
+}
+
+.thead tr th{
+  background-color: blue;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  height: 38px;
+  background-color: #f7f7f7;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+.thead tr th div{
+  background-color: blue;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  height: 18px;
+  line-height: 18px;
+  //padding: 8px 10px;
+  background-position: 0 -56px;
+
+}
+
+.first{
+  width: 77px;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+.tbody tr:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.tbody tr:nth-child(even){
+  background-color: #ffffff;
 }

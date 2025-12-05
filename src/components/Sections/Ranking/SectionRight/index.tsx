@@ -3,14 +3,13 @@ import s from './local.module.scss'
 const SectionRight = () =>{
     return (
         <div className={s.sectionRight}>
-            <div >
                 <div className={s.head}>
                     <div className={s.headImgBox}>
                     <img className={s.headImg} src="img/rankingpage/heading1.jpg"/>
                     </div>
                     <div className={s.headBox}>
                         <p className={s.title}>新歌榜</p>
-                        <p className={s.subTitle}><i className={s.timeIcon}></i>最近更新：12月05日 <span>（刚刚更新）</span></p>
+                        <p className={s.subTitle}><i className={s.timeIcon}></i>  最近更新：12月05日 <span>（刚刚更新）</span></p>
                         <div className={s.headBox2}>
                             <a className={s.playIcon}><i><em></em>播放</i></a>
                             <a className={s.plusIcon}></a>
@@ -21,48 +20,27 @@ const SectionRight = () =>{
                         </div>
                     </div>
                 </div>
-                <div>
-                    <span>歌曲留白</span><span>100首歌</span><span>播放：3162790656次</span>
+
+                <div className={s.songHeadingBox}>
+                    <span className={s.songHeading}>歌曲列表</span>
+                    <span className={s.songHeading2}>100首歌</span>
+                    <span className={s.songHeading3}>播放：3162790656次</span>
                 </div>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>姓名</th>
-                        <th>年龄</th>
-                        <th>城市</th>
-                        <th>职业</th>
-                    </tr>
+                <table className={s.table}>
+                    <thead className={s.thead}>
+                        <tr>
+                            <th className={s.first}></th>
+                            <th><div>标题</div></th>
+                            <th><div>时长</div></th>
+                            <th><div>歌手</div></th>
+                        </tr>
                     </thead>
-                    <tbody>
+                    <tbody className={s.tbody}>
                     <tr>
-                        <td>张三</td>
-                        <td>28</td>
-                        <td>北京</td>
-                        <td>工程师</td>
-                    </tr>
-                    <tr>
-                        <td>李四</td>
-                        <td>34</td>
-                        <td>上海</td>
-                        <td>设计师</td>
-                    </tr>
-                    <tr>
-                        <td>王五</td>
-                        <td>22</td>
-                        <td>广州</td>
-                        <td>学生</td>
-                    </tr>
-                    <tr>
-                        <td>赵六</td>
-                        <td>45</td>
-                        <td>深圳</td>
-                        <td>经理</td>
-                    </tr>
-                    <tr>
-                        <td>孙七</td>
-                        <td>31</td>
-                        <td>杭州</td>
-                        <td>产品经理</td>
+                        <td><div className={s.firstColumn}><span>1</span><span className={s.zeroIcon}></span></div></td>
+                        <td><div className={s.secondColumn}><img src={"img/rankingpage/img1"}/><span></span><span></span></div></td>
+                        <td>03:10</td>
+                        <td><a href='#'>Disney</a>/<a href='#'>Shaakira</a></td>
                     </tr>
                     </tbody>
                 </table>
@@ -91,8 +69,6 @@ const SectionRight = () =>{
                 </div>
                 <a></a>
             </div>
-
-        </div>
     )
 }
 
