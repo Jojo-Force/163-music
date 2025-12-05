@@ -7,7 +7,7 @@ import SectionAside from "../Sections/SectionAside";
 
 const Main =()=>{
     return (
-        <main>
+        <main className={s.mainBox}>
             <SectionHero/>
             <div className={s.main}>
                 <div className={s.mainLeft}>
