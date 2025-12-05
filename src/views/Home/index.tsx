@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Main from "../../components/Main";
+import Top from "../../components/Top";
 import { useEffect } from "react";
 
 
@@ -21,6 +22,7 @@ const Home = () => {
         <Header/>
         <Main/>
         <Footer/>
+          <Top/>
       </>
   );
 };
