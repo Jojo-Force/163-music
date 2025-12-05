@@ -1,5 +1,220 @@
 
 .section-right{
   //background: red;
-  height: 120rem;
+  //height: 120rem;
+  background-color: #ffffff;
+}
+
+.head-img{
+  width: 15rem;
+  height: 15rem;
+}
+
+.head{
+  display: flex;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+}
+
+.title{
+  font-size: 2.4rem;
+}
+
+.time-icon{
+  display: inline-block;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  width: 13px;
+  height: 13px;
+  background-position: -18px -682px;
+}
+
+.sub-title span{
+  color: #999999;
+}
+
+.head-box{
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.headBox2{
+  display: flex;
+  gap:0.5rem;
+}
+
+.play-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  //width: 61px;
+  height: 31px;
+  padding: 0 5px 0 0;
+  line-height: 31px;
+  background-position: right -428px;
+  cursor: pointer;
+}
+
+.play-icon i{
+  display: flex;
+  gap: 0.5rem;
+  height: 31px;
+  //width: 58px;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -387px;
+  padding: 0 7px 8px 8px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.play-icon:hover{
+  background-position: right -510px;
+}
+
+.play-icon:hover i {
+  background-position: 0 -469px;
+}
+
+.play-icon:hover i em{
+  background-position: -28px -1622px;
+}
+.play-icon i em{
+
+  display: inline-block;
+
+  height: 18px;
+  width: 20px;
+  margin: 6px 2px 2px 0;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -1622px;
+}
+
+.plus-icon{
+  width: 31px;
+  margin-left: -10px;
+  padding-right: 0;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  background-position: 0 -1588px;
+  cursor: pointer;
+}
+
+.plus-icon:hover {
+  background-position: -40px -1588px;
+}
+
+.add-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+}
+.add-icon:hover{
+  background-position: right -1106px;
+}
+
+.add-icon:hover i {
+  background-position: 0 -1063px;
+}
+
+.add-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -977px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+
+.share-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+  &:hover{
+    background-position: right -1106px;
+    i{
+      background-position: 0 -1268px;
+    }
+  }
+}
+
+.share-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -1225px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+
+.download-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+  &:hover{
+    background-position: right -1106px;
+    i{
+      background-position: 0 -2805px;
+    }
+  }
+}
+
+.download-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -2761px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+.comment-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+  &:hover{
+    background-position: right -1106px;
+    i{
+      background-position: 0 -1508px;
+    }
+  }
+}
+
+.comment-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -1465px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+.head-img-box{
+  border: 1px solid #ccc;
+  padding: 0.2rem;
 }
