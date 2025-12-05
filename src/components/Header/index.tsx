@@ -1,5 +1,7 @@
 import s from './local.module.scss'
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
+
 const Header = () => {
     return (
         <header className={s.header}>
@@ -50,10 +52,10 @@ const Header = () => {
             <div className={s.secondHeader}>
                 <ul className={s.secondNavList}>
                     <li className={s.secondNavLiSelected}>
-                        <a href="#" className={clsx(s.secondNavLink,s.secondNavLinkSelected)}>推荐</a>
+                        <Link to='/' className={clsx(s.secondNavLink,s.secondNavLinkSelected)}>推荐</Link>
                     </li>
                     <li>
-                        <a href="#" className={s.secondNavLink}>排行榜</a>
+                        <Link to='/ranking' className={s.secondNavLink}>排行榜</Link>
                     </li>
                     <li>
                         <a href="#" className={s.secondNavLink}>歌单</a>

@@ -1,0 +1,88 @@
+
+.section-left{
+  //background: blue;
+  height: 120rem;
+  padding-top: 1.9rem;
+}
+
+
+.streamer-list{
+  width: 100%;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  margin-top: 1.8rem;
+  height: 100%;
+}
+
+.section-streamer-img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.streamer-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+  gap: 1rem;
+
+}
+
+.figure-out2{
+  //width: 100%;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.figure-out2:hover{
+  background-color: #f4f2f2;
+}
+
+.figure-out2-selected,
+.figure-out2-selected:hover,
+{
+  background-color: #e6e6e6;
+}
+
+
+.streamer-name{
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 500;
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+}
+
+.streamer-disc{
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  width: 16rem;
+}
+
+.ranking-box{
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+
+.img-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.heading{
+  color: #000;
+  margin-left: 1.2rem;
+}
+

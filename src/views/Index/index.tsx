@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Top from "@/components/Top";
 import Playbar from "@/components/Playbar";
-import Home from "../Home";
+import {Outlet} from "react-router-dom";
 
 
 const Index = () => {
@@ -10,7 +10,7 @@ const Index = () => {
         <>
             <Header/>
             <main>
-                <Home/>
+                <Outlet/>
             </main>
             <Footer/>
             <Top/>

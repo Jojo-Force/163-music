@@ -2,16 +2,12 @@ import { useRoutes } from "react-router-dom";
 import router from "./router";
 
 
-function BeforeRouterEnter() {
-  const outlet = useRoutes(router);
-  return outlet;
-}
-
 
 function App() {
+    const outlet = useRoutes(router);
   return (
       <div className="App">
-        <BeforeRouterEnter />
+          {outlet}
       </div>
   );
 }
