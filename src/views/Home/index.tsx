@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import Main from "../../components/Main";
 import Top from "../../components/Top";
 import { useEffect } from "react";
+import Playbar from "../../components/Playbar";
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
         <Main/>
         <Footer/>
           <Top/>
+          <Playbar/>
       </>
   );
 };

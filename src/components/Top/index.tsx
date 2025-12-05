@@ -19,7 +19,7 @@ const Top = () => {
     }, []);
     return (
         <div className={s.topBox}>
-            <a className={clsx(s.topLink,isAtTop ? s.showTop:"")} href="#"></a>
+            <a className={clsx(s.topLink,isAtTop ? "":s.showTop)} href="#"></a>
         </div>
     )
 }
