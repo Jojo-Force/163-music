@@ -1,5 +1,5 @@
 
-import Home from '../views/Home'
+import Index from '../views/Index'
 
 // Navigatec重定向组件
 // 懒加载的模式需要我们给他添加一个Loading组件
@@ -11,7 +11,7 @@ const routes = [
     // 嵌套路由开始
     {
         path:"/",
-        element: <Home/>
+        element: <Index/>
     },
     // 嵌套路由结束
     // 访问其余路径的时候直接跳到首页

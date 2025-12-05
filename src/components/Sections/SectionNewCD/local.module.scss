@@ -149,7 +149,7 @@
   //padding: 3rem 1.5rem;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -0.2rem;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
@@ -157,6 +157,7 @@
   transition: all 0.5s;
   opacity: 1;
   cursor: pointer;
+  z-index: 2;
 }
 
 .left-btn:hover .left-icon{

@@ -1,32 +1,26 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Main from "../../components/Main";
-import Top from "../../components/Top";
-import { useEffect } from "react";
-import Playbar from "../../components/Playbar";
+import SectionHero from "@/components/Sections/SectionHero";
+import SectionRecommend from "@/components//Sections/SectionRecommend";
+import SectionNewCD from "@/components//Sections/SectionNewCD";
+import SectionRanking from "@/components//Sections/SectionRanking";
+import s from './local.module.scss'
+import SectionAside from "@/components//Sections/SectionAside";
 
-
-const Home = () => {
-
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "./js/script.js";
-        script.async = false;
-        document.body.appendChild(script);
-        return () => {
-            // 组件卸载时移除脚本
-            document.body.removeChild(script);
-        };
-    }, []);
-  return (
-      <>
-        <Header/>
-        <Main/>
-        <Footer/>
-          <Top/>
-          <Playbar/>
-      </>
-  );
-};
+const Home =()=>{
+    return (
+        <div className={s.mainBox}>
+            <SectionHero/>
+            <div className={s.main}>
+                <div className={s.mainLeft}>
+                    <SectionRecommend/>
+                    <SectionNewCD/>
+                    <SectionRanking/>
+                </div>
+                <div className={s.mainRight}>
+                    <SectionAside/>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 export default Home;
