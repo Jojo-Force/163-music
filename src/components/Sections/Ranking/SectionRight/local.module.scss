@@ -4,10 +4,11 @@
   //height: 120rem;
   display: flex;
   flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
   align-items: center;
   background-color: #ffffff;
   color: #333;
+  height: 100%;
 }
 
 .head-img{
@@ -303,14 +304,14 @@ justify-content: center;
 .zero-icon{
   display: inline-block;
   line-height: 17px;
-  width: 32px;
+  width: 28px;
   background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
   background-position: -74px -268px;
-  padding-left: 8px;
   font-size: 0.9rem;
+  margin-left: 0.8rem;
 }
 
-.tbody__first-column{
+.first-column{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -377,20 +378,156 @@ justify-content: center;
 .comment{
   display: flex;
   gap:1.2rem;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 3.6rem;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 
 .comment__box{
   display: flex;
-  gap:1.2rem
+  gap:1.2rem;
+  width: 90%;
 }
 
 .comment__avatar{
   width: 5rem;
   height: 5rem;
+}
+
+.comment__input{
+  flex:1;
+}
+
+.comment__input::placeholder {
+  /* 控制 placeholder 的样式 */
+  position: relative;
+  top: -1.5rem; /* 微调 */
+  left: 0.5rem;
+  color: #999;
+}
+
+.comment__span{
+  color: #767676;
+  position: absolute;
+  top:40%;
+  left: 13.2%;
+}
+
+.tools{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //gap:10rem;
+  margin-left: 6rem;
+}
+
+.tools__wrapper1{
+  display: flex;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tools__wrapper1__smile{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: -40px -490px;
+}
+
+.tools__wrapper1__at{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: -60px -490px;
+}
+.tools__wrapper2{
+  display: flex;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools__wrapper2__span{
+  color: #999999;
+}
+
+.tools__wrapper2__comment:visited,
+.tools__wrapper2__comment:link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 46px;
+  height: 25px;
+  background: url("img/rankingpage/button.png") no-repeat 0 9999px;
+  background-position: -84px -64px;
+}
+
+.tools__wrapper2__comment:hover,
+.tools__wrapper2__comment:active{
+  background-position: -84px -94px;
+}
+
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap:2.4rem;
+  text-decoration: none;
+  margin-top: 3.6rem;
+}
+
+.login__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.5rem;
+  text-decoration: none;
+}
+
+.login__box span{
+  color: #333333;
+}
+.login__box__link:link,
+.login__box__link:visited{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.login__box__link:hover,
+.login__box__link:active{
+
+}
+
+.login__btn:link,
+.login__btn:visited{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 2.5rem;
+  width: 10.8rem;
+  background-color: #ff5143;
+  border-radius: 2rem;
+  color: #fff;
+}
+
+
+.login__btn:hover,
+.login__btn:active{
+  text-decoration: underline;
 }

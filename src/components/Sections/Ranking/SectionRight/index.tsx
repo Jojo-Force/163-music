@@ -215,7 +215,7 @@ const SectionRight = () =>{
                     <tbody className={s.tbody}>
                     {data.map((d,index)=>(
                         <tr>
-                            <td><div className={s["tbody__first-column"]}><span>{index+1}</span><span className={s.zeroIcon}>0</span></div></td>
+                            <td><div className={s.firstColumn}><span>{index+1}</span><span className={s.zeroIcon}>0</span></div></td>
                             <td><div className={s.secondColumn}>
                                 {index < 3 && <img src={d.imgSrc}/>}
                                 <span className={s.playIcon2}></span><a className={s.titleLink} href="#">{d.title}</a></div></td>
@@ -241,23 +241,28 @@ const SectionRight = () =>{
                     </div>
                     <div className={s.comment__box}>
                         <img className={s.comment__avatar} src="img/rankingpage/default_avatar.jpg" />
-                        <input></input>
+                        <input className={s.comment__input} placeholder="评论"></input>
+                        <span className={s.comment__span}>{"<"}&nbsp;</span>
                     </div>
-                    <div>
-                        <div>
-                            <a></a>
-                            <a></a>
+                    <div className={s.tools}>
+                        <div className={s.tools__wrapper1}>
+                            <i className={s.tools__wrapper1__smile}></i>
+                            <i className={s.tools__wrapper1__at}></i>
                         </div>
-                        <div>
-                            <span></span>
-                            <a></a>
+                        <div className={s.tools__wrapper2}>
+                            <span className={s.tools__wrapper2__span}>400</span>
+                            <a className={s.tools__wrapper2__comment} href="#">评论</a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p><span></span></p>
+                <div className={s.login}>
+                    <div className={s.login__box}>
+                    <a className={s.login__box__link} href="#">登录</a>
+                    <span>后查看精彩评论</span>
+                    </div>
+                    <a className={s.login__btn} href={"#"}>立即登录</a>
                 </div>
-                <a></a>
+
             </div>
     )
 }
