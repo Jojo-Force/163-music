@@ -1,5 +1,7 @@
 import s from './local.module.scss'
 import FigureBox2 from "./FigureBox2";
+import {useEffect, useState} from "react";
+import index from "../../../../views/Index";
 
 const streamerImgs = [
     {
@@ -246,7 +248,24 @@ const streamerImgs2 = [
         disc: "刚刚更新",
     },
 ]
-const SectionLeft = () =>{
+
+interface SectionLeftProps {
+    onChangePage: (number) => void;
+}
+
+const SectionLeft = ({onChangePage}:SectionLeftProps) =>{
+    const [num, setNum] = useState(0);
+    const [num2, setNum2] = useState(0);
+    const onClick = (index:number) => {
+        setNum(index)
+        setNum2(-1)
+        onChangePage(index)
+    }
+
+    const onClick2 = (index:number) => {
+        setNum2(index)
+        setNum(-1)
+    }
     return (
         <div className={s.sectionLeft}>
             <div className={s.rankingBox}>
@@ -255,7 +274,11 @@ const SectionLeft = () =>{
                     <FigureBox2
                         imgSrc={img.imgSrc}
                         name={img.name}
-                        disc={img.disc}>
+                        disc={img.disc}
+                        index={index}
+                        onClick={onClick}
+                        selected={num === index}
+                    >
                     </FigureBox2>
                 ))}
             </div>
@@ -265,7 +288,11 @@ const SectionLeft = () =>{
                     <FigureBox2
                         imgSrc={img.imgSrc}
                         name={img.name}
-                        disc={img.disc}>
+                        disc={img.disc}
+                        index={index}
+                        onClick={onClick2}
+                        selected={num2 === index}
+                    >
                     </FigureBox2>
                 ))}
             </div>

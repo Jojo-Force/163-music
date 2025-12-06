@@ -177,15 +177,23 @@ const data= [
         singers: ["Disney","Shaakira"]
     }
 ]
-const SectionRight = () =>{
+
+interface SectionRightProps {
+    page:number;
+}
+
+const SectionRight = ({page}:SectionRightProps) =>{
     return (
         <div className={s.sectionRight}>
                 <div className={s.head}>
                     <div className={s.headImgBox}>
-                    <img className={s.headImg} src="img/rankingpage/heading1.jpg"/>
+
+                        {page===0 && <img className={s.headImg} src="img/rankingpage/heading0.jpg"/>}
+                        {page>=1 && <img className={s.headImg} src="img/rankingpage/heading1.jpg"/>}
                     </div>
                     <div className={s.headBox}>
-                        <p className={s.title}>新歌榜</p>
+                        {page===0 && <p className={s.title}>飙升榜</p>}
+                        {page>=1 && <p className={s.title}>新歌榜</p>}
                         <p className={s.subTitle}><i className={s.timeIcon}></i>  最近更新：12月05日 <span>（刚刚更新）</span></p>
                         <div className={s.headBox2}>
                             <a className={s.playIcon}><i><em></em>播放</i></a>

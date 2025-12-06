@@ -5,12 +5,15 @@ interface FigureBoxProps {
     imgSrc: string;
     name: string;
     disc: string;
+    selected: boolean;
+    onClick: (number) => void;
+    index: number;
 }
 
-const FigureBox2 = ({imgSrc,name,disc}:FigureBoxProps) => {
+const FigureBox2 = ({imgSrc,name,disc,selected,onClick,index}:FigureBoxProps) => {
     return (
         // <figure className={clsx(s.figureOut2,s.figureOut2Selected)}>
-        <figure className={clsx(s.figureOut2)}>
+        <figure className={clsx(s.figureOut2,selected? s.figureOut2Selected:"")} onClick={()=>onClick(index)}>
             <div className={s.imgContainer}>
                 <img
                     className={s.sectionStreamerImg}
