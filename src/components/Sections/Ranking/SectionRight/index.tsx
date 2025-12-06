@@ -19,6 +19,162 @@ const data= [
         title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
         time: "03:10",
         singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
+    },
+    {
+        imgSrc: "img/rankingpage/img1.jpg",
+        title: "Zoo (From &quot;Zootopia 2&quot;/Soundtrack Version) - (《疯狂动物城2》主题曲)",
+        time: "03:10",
+        singers: ["Disney","Shaakira"]
     }
 ]
 const SectionRight = () =>{
@@ -45,7 +201,7 @@ const SectionRight = () =>{
                 <div className={s.songHeadingBox}>
                     <span className={s.songHeading}>歌曲列表</span>
                     <span className={s.songHeading2}>100首歌</span>
-                    <span className={s.songHeading3}>播放：3162790656次</span>
+                    <span className={s.songHeading3}>播放：<span>3162790656</span>次</span>
                 </div>
                 <table className={s.table}>
                     <thead className={s.thead}>
@@ -59,9 +215,11 @@ const SectionRight = () =>{
                     <tbody className={s.tbody}>
                     {data.map((d,index)=>(
                         <tr>
-                            <td><div className={s.firstColumn}><span>{index}</span><span className={s.zeroIcon}>0</span></div></td>
-                            <td><div className={s.secondColumn}><img src={d.imgSrc}/><span className={s.playIcon2}></span><a className={s.titleLink} href="#">{d.title}</a></div></td>
-                            <td>{d.time}</td>
+                            <td><div className={s["tbody__first-column"]}><span>{index+1}</span><span className={s.zeroIcon}>0</span></div></td>
+                            <td><div className={s.secondColumn}>
+                                {index < 3 && <img src={d.imgSrc}/>}
+                                <span className={s.playIcon2}></span><a className={s.titleLink} href="#">{d.title}</a></div></td>
+                            <td className={s.time}>{d.time}</td>
                             <td>
                                 {
                                     d.singers.map((singer,index) =>(
@@ -77,12 +235,12 @@ const SectionRight = () =>{
                     </tbody>
                 </table>
 
-                <div>
-                    <div>
-                        <span>评论</span> <span>共157248条评论</span>
+                <div className={s.comment}>
+                    <div className={s.commentHeadingBox}>
+                        <span  className={s.songHeading}>评论</span> <span className={s.songHeading2}>共157248条评论</span>
                     </div>
-                    <div>
-                        <img/>
+                    <div className={s.comment__box}>
+                        <img className={s.comment__avatar} src="img/rankingpage/default_avatar.jpg" />
                         <input></input>
                     </div>
                     <div>

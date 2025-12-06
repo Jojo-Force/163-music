@@ -250,8 +250,13 @@ justify-content: center;
   margin-left: auto;
 }
 
+.song-heading3 span{
+  color: #c20b0d;
+}
 .table{
+  border: 1px solid #d9d9d9;
   border-top: 2px solid #c20c0c;
+
   width: 90%;
   margin-top: 1.2rem;
   border-collapse: collapse;
@@ -305,7 +310,7 @@ justify-content: center;
   font-size: 0.9rem;
 }
 
-.firstColumn{
+.tbody__first-column{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -334,14 +339,58 @@ justify-content: center;
   width: 100px;
 }
 
+.title-link:hover{
+  text-decoration: underline;
+}
+
 .second-column{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 0.1rem;
+  width: 25rem;
+
 }
 
 
 .tbody tr{
   text-align: center;
+}
+
+.tbody tr td{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.time{
+  color:#777777;
+}
+
+.comment-heading-box{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border-bottom: 2px solid #c20b0d;
+}
+
+
+.comment{
+  display: flex;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.6rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.comment__box{
+  display: flex;
+  gap:1.2rem
+}
+
+.comment__avatar{
+  width: 5rem;
+  height: 5rem;
 }

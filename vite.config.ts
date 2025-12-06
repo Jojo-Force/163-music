@@ -12,7 +12,7 @@ export default defineConfig({
     css: {
         modules: {
             // 启用驼峰转换
-            localsConvention: 'camelCaseOnly' // 或 'camelCase'
+            localsConvention: 'camelCase' // 或 'camelCase'
         }
     }
 })
