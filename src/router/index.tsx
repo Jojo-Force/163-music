@@ -6,6 +6,7 @@ import Ranking from '../views/Ranking'
 // 懒加载的模式需要我们给他添加一个Loading组件
 import {Navigate} from 'react-router-dom'
 import Home from "../views/Home";
+import Song from "../views/Song";
 
 
 
@@ -17,6 +18,7 @@ const routes = [
         children:[
             {index:true, element: <Home/>},
             {path:'ranking', element: <Ranking/>},
+            {path:'song', element: <Song/>},
         ],
     },
     // 嵌套路由结束

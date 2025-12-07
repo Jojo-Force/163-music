@@ -58,7 +58,7 @@ const Header = () => {
                         <Link to='/ranking' className={s.secondNavLink}>排行榜</Link>
                     </li>
                     <li>
-                        <a href="#" className={s.secondNavLink}>歌单</a>
+                        <Link to='/song' className={s.secondNavLink}>歌单</Link>
                     </li>
                     <li>
                         <a href="#" className={s.secondNavLink}>播客</a>
