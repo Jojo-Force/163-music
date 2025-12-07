@@ -255,7 +255,7 @@ interface SectionLeftProps {
 
 const SectionLeft = ({onChangePage}:SectionLeftProps) =>{
     const [num, setNum] = useState(0);
-    const [num2, setNum2] = useState(0);
+    const [num2, setNum2] = useState(-1);
     const onClick = (index:number) => {
         setNum(index)
         setNum2(-1)

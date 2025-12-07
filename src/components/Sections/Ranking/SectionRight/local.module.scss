@@ -531,3 +531,83 @@ justify-content: flex-start;
 .login__btn:active{
   text-decoration: underline;
 }
+
+.tbody tr:hover .play-box{
+  display: flex;
+}
+.tbody tr:hover .time{
+  display: none;
+}
+.play-box{
+  display: none;
+  gap:0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.play__play:link,
+.play__play:visited,{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: 0 -700px;
+}
+
+.play__play:hover,
+.play__play:active {
+  background-position: -22px -700px;
+}
+
+
+.play__add:link,
+.play__add:visited,{
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 -174px;
+}
+
+.play__add:hover,
+.play__add:active {
+  background-position: -20px -174px;
+}
+
+
+.play__share:link,
+.play__share:visited,{
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 -195px;
+}
+
+.play__share:hover,
+.play__share:active {
+  background-position: -20px -195px;
+}
+
+
+.play__download:link,
+.play__download:visited,{
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: -81px -174px;
+}
+
+.play__download:hover,
+.play__download:active {
+  background-position: -104px -174px;
+}
+
+.thirdColumn{
+  width: 10rem;
+}

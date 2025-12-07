@@ -227,7 +227,17 @@ const SectionRight = ({page}:SectionRightProps) =>{
                             <td><div className={s.secondColumn}>
                                 {index < 3 && <img src={d.imgSrc}/>}
                                 <span className={s.playIcon2}></span><a className={s.titleLink} href="#">{d.title}</a></div></td>
-                            <td className={s.time}>{d.time}</td>
+                            <td className={s.thirdColumn}>
+                                <div className={s.time}>
+                                    {d.time}
+                                </div>
+                                <div className={s.playBox}>
+                                    <a className={s.play__play} href={"#"}></a>
+                                    <a className={s.play__add} href={"#"}></a>
+                                    <a className={s.play__share} href={"#"}></a>
+                                    <a className={s.play__download} href={"#"}></a>
+                                </div>
+                            </td>
                             <td>
                                 {
                                     d.singers.map((singer,index) =>(
