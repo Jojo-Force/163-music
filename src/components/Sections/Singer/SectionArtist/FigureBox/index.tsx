@@ -13,7 +13,7 @@ const FigureBox = ({ imgSrc, singerName }: FigureBoxProps) => {
         <a className={s.msk} href="#"></a>
       </div>
       <div className={s.singerBox}>
-        <span className={s.singerName}>{singerName}</span>
+        <a className={s.singerName} href={"#"}>{singerName}</a>
         <a className={s.link} href="#"></a>
       </div>
     </figure>

@@ -1,4 +1,4 @@
-.section-artist {
+.section-names {
   background-color: #ffffff;
   //height: 60rem;
   display: flex;
@@ -13,6 +13,8 @@
   padding-right: 1.2rem;
   min-width: 83rem;
   width:83rem;
+  border-top: 1px dashed #e2e2e2;
+  padding-top: 2rem;
 }
 
 .figure-out {
@@ -150,8 +152,8 @@
 .img-box-sub1 {
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  row-gap: 3.4rem;
-  column-gap: 3.8rem;
+  row-gap: 1rem;
+  column-gap: 10.8rem;
   transition: all 1s ease-out;
   //grid-auto-flow: column;
   margin-bottom: 2.4rem;
@@ -289,6 +291,7 @@
 
 .singer-box{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap:0.5rem;
   align-items: center;
 }
