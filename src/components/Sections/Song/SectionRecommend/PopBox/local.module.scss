@@ -1,0 +1,169 @@
+
+
+.pop-box{
+  height: 43rem;
+  width: 64rem;
+  top:-2.5rem;
+  left:-3.5rem;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: -0.2rem 0.2rem 1rem rgba(0, 0, 0, 30.5%);
+  display: none;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.pop-box-show{
+  display: flex;
+}
+
+.top-icon{
+  width: 24px;
+  height: 11px;
+  background: url("img/rankingpage/iconall.png") no-repeat;
+  background-position: -48px 0;
+  position: absolute;
+  top: -1.1rem;
+  left:12.5rem;
+}
+
+.body{
+  display: flex;
+  width: 100%;
+
+  flex: 1;
+}
+
+.left{
+  width: 15%;
+  height: 100%;
+  //background-color: red;
+  border-top: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 1.2rem 0 0 0;
+}
+
+.right{
+  width: 85%;
+  height: 100%;
+  //background-color: blue;
+  border-top: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 1.8rem 1.2rem 0rem 1.2rem;
+}
+
+.head{
+  border-bottom: 1px solid #f7f7f7;
+}
+.head__btn:link,
+.head__btn:visited{
+  display: inline-block;
+  width: 75px;
+  height: 26px;
+  background: url("img/rankingpage/button.png") no-repeat;
+  background-position: 0 -64px;
+  text-align: center;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000;
+  margin: 2rem 0 2rem 2.5rem;
+}
+.head__btn:active,
+.head__btn:hover{
+  text-decoration: underline;
+}
+
+.left__box{
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.left__box__global{
+
+  width: 23px;
+  height: 23px;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: -20px -735px;
+}
+
+.left__box__style{
+  width: 24px;
+  height: 24px;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: 0 -60px;
+}
+
+.left__box__cafe{
+  width: 24px;
+  height: 24px;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: 0 -88px;
+}
+
+.left__box__emotion{
+  width: 24px;
+  height: 24px;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: 0 -117px;
+}
+.left__box__title{
+  width: 24px;
+  height: 24px;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: 0 -141px;
+}
+
+.left__box_text{
+  color:#333333;
+  font-weight: 600;
+}
+
+.right__box{
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.right__box span{
+  color:#dadfea;
+}
+.right__link:link,
+.right__link:visited{
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+}
+
+.right__link:active,
+.right__link:hover{
+  text-decoration: underline;
+}
+
+.left .left__box:nth-child(3){
+  margin-top: 3.7rem;
+}
+
+.left .left__box:nth-child(4){
+  margin-top: 1.1rem;
+}
+.left .left__box:nth-child(5){
+  margin-top: 1.1rem;
+}
+
+.right .right__box:nth-child(2){
+  margin-top: 1.1rem;
+}
+
+.right .right__box:nth-child(2){
+  margin-top: 1.1rem;
+}
