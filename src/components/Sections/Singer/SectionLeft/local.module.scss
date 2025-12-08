@@ -99,13 +99,17 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding-left: 1.3rem;
+  padding-left: 0;
   list-style: none; /* 去掉默认圆点 */
 }
 
 
 .ul li{
-  padding-bottom: 1.2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.0);
 }
 .ul li::before {
   display: inline-block;
@@ -125,6 +129,25 @@
 
 .link:active,
 .link:hover{
+
+}
+.link-selected{
+  border: 2px solid #f4f4f4;
+  background: linear-gradient(to left, #ffffff, #f7f7f7);
+
+}
+
+.ul .link-selected::before{
+  color:#c20c0c;
+}
+.link-selected .link:visited,
+.link-selected .link:link{
+  color:#c20c0c;
+
+}
+
+.link-selected .link:active,
+.link-selected .link:hover{
 
 }
 

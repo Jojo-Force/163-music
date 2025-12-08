@@ -1,6 +1,7 @@
 import s from "./local.module.scss";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import clsx from "clsx";
 
 const menu = [
   {
@@ -8,7 +9,7 @@ const menu = [
     items: [
       {
         name: "推荐歌手",
-        link: "/singer/artist",
+        link: "/singer",
       },
       {
         name: "入驻歌手",
@@ -104,32 +105,32 @@ const menu = [
 ];
 
 const SectionLeft = () => {
-  const [num, setNum] = useState(0);
-  const [num2, setNum2] = useState(-1);
-  const onClick = (index: number) => {
-    setNum(index);
-    setNum2(-1);
+  const [group, setGroup] = useState(1);
+  const [item, setItem] = useState(1);
+  const onClick = (groupIndex: number, itemIndex: number) => {
+    setGroup(groupIndex);
+    setItem(itemIndex);
   };
-
-  const onClick2 = (index: number) => {
-    setNum2(index);
-    setNum(-1);
-  };
-
   return (
     <>
       <div className={s.sectionLeft}>
-        {menu.map((m, index) => (
+        {menu.map((m, groupIndex) => (
           <div className={s.rankingBox}>
             <h2 className={s.heading}>{m.title}</h2>
             <ul className={s.ul}>
-              {m.items.map((i, index) => (
-                <li>
-                  <Link to={i.link} className={s.link}>
-                    {i.name}
-                  </Link>
-                </li>
-              ))}
+              {m.items.map((i, itemIndex) => {
+                const isActive = group === groupIndex && item === itemIndex;
+                return (
+                  <li
+                    className={isActive ? s.linkSelected : ""}
+                    onClick={() => onClick(groupIndex, itemIndex)}
+                  >
+                    <Link to={i.link} className={s.link}>
+                      {i.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}
