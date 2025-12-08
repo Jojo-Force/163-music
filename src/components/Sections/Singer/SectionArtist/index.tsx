@@ -366,6 +366,8 @@ const SectionArtist = () => {
         <a className={s.headingLink} href="#">
           入驻歌手
         </a>
+          <button className={s.moreBtn}>
+              {"更多 >"}</button>
       </div>
 
       <div className={s.imgBoxSub1}>
