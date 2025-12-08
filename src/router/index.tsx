@@ -7,6 +7,9 @@ import { Navigate } from "react-router-dom";
 import Home from "../views/Home";
 import Song from "../views/Song";
 import Album from "../views/Album";
+import Singer from "../views/Singer";
+import Page1 from "../components/Sections/Singer/SectionRight/Page1";
+import Page2 from "../components/Sections/Singer/SectionRight/Page2";
 
 const routes = [
   // 嵌套路由开始
@@ -18,6 +21,14 @@ const routes = [
       { path: "ranking", element: <Ranking /> },
       { path: "song", element: <Song /> },
       { path: "album", element: <Album /> },
+      {
+        path: "singer",
+        element: <Singer />,
+        children: [
+          { index: true, element: <Page1 /> },
+          { path: "signed", element: <Page2 /> },
+        ],
+      },
     ],
   },
   // 嵌套路由结束

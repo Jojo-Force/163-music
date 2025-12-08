@@ -102,9 +102,9 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#" className={s.secondNavLink}>
+            <Link to="/singer" className={s.secondNavLink}>
               歌手
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/album" className={s.secondNavLink}>
