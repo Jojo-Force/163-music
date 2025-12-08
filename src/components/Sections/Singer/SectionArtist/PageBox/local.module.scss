@@ -1,0 +1,108 @@
+.page-box{
+  display: flex;
+  gap: 0.2rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+.prev-disable:link,
+.prev-disable:visited{
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 71px;
+  height: 24px;
+  padding-left: 8px;
+  line-height: 24px;
+  text-align: center;
+  background: url("img/rankingpage/button.png") no-repeat 0 9999px;
+  background-position: 0 -620px;
+  color: #cacaca;
+  cursor: default;
+}
+
+.prev-disable:hover,
+.prev-disable:active{
+
+}
+
+
+
+.prev:link,
+.prev:visited{
+  color: #333;
+  background-position: 0 -560px;
+}
+
+.prev:hover,
+.prev:active{
+  background-position: 0 -590px;
+}
+
+.next:link,
+.next:visited{
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 71px;
+  height: 24px;
+  padding-right: 8px;
+  line-height: 24px;
+  text-align: center;
+  background: url("img/rankingpage/button.png") no-repeat 0 9999px;
+  background-position: -75px -560px;
+  color: #333;
+  cursor: pointer;
+}
+
+.next:hover,
+.next:active{
+  background-position: -75px -590px;
+}
+
+
+.next-disable:link,
+.next-disable:visited{
+  background-position: -75px -620px;
+  color: #cacaca;
+  cursor: default;
+}
+
+.next-disable:hover,
+.next-disable:active{
+
+}
+.page:link,
+.page:visited{
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0 8px;
+  height: 22px;
+  text-align: center;
+  line-height: 18px;
+  background: url("img/rankingpage/button.png") no-repeat 0 9999px;
+  //background-position: -75px -560px;
+  color: #333;
+  cursor: pointer;
+}
+
+.page:hover,
+.page:active{
+  border-color: #666;
+}
+
+.page-selected:link,
+.page-selected:visited{
+  background-position: 0 -650px;
+  border-color: #A2161B;
+  color: #fff;
+  cursor: default;
+}
