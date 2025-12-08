@@ -129,7 +129,7 @@
 
 .link:active,
 .link:hover{
-
+  text-decoration: underline;
 }
 .link-selected{
   border: 2px solid #f4f4f4;
@@ -143,7 +143,7 @@
 .link-selected .link:visited,
 .link-selected .link:link{
   color:#c20c0c;
-
+  text-decoration: none;
 }
 
 .link-selected .link:active,

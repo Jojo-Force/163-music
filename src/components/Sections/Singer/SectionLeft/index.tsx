@@ -105,8 +105,8 @@ const menu = [
 ];
 
 const SectionLeft = () => {
-  const [group, setGroup] = useState(1);
-  const [item, setItem] = useState(1);
+  const [group, setGroup] = useState(0);
+  const [item, setItem] = useState(0);
   const onClick = (groupIndex: number, itemIndex: number) => {
     setGroup(groupIndex);
     setItem(itemIndex);

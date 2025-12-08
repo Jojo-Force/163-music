@@ -1,11 +1,613 @@
+
 .section-right{
   //background: red;
   //height: 120rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+justify-content: flex-start;
   align-items: center;
   background-color: #ffffff;
   color: #333;
   height: 100%;
+}
+
+.head-img{
+  width: 15rem;
+  height: 15rem;
+}
+
+.head{
+  display: flex;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+}
+
+.title{
+  font-size: 2.4rem;
+}
+
+.time-icon{
+  display: inline-block;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  width: 13px;
+  height: 13px;
+  background-position: -18px -682px;
+}
+
+.sub-title{
+  display: flex;
+  align-items: center;
+  gap:0.6rem;
+}
+.sub-title span{
+  color: #999999;
+}
+
+.head-box{
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.headBox2{
+  display: flex;
+  gap:0.5rem;
+}
+
+.play-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  //width: 61px;
+  height: 31px;
+  padding: 0 5px 0 0;
+  line-height: 31px;
+  background-position: right -428px;
+  cursor: pointer;
+}
+
+.play-icon i{
+  display: flex;
+  gap: 0.5rem;
+  height: 31px;
+  //width: 58px;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -387px;
+  padding: 0 7px 8px 8px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.play-icon:hover{
+  background-position: right -510px;
+}
+
+.play-icon:hover i {
+  background-position: 0 -469px;
+}
+
+.play-icon:hover i em{
+  background-position: -28px -1622px;
+}
+.play-icon i em{
+
+  display: inline-block;
+
+  height: 18px;
+  width: 20px;
+  margin: 6px 2px 2px 0;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -1622px;
+}
+
+.plus-icon{
+  width: 31px;
+  margin-left: -10px;
+  padding-right: 0;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  background-position: 0 -1588px;
+  cursor: pointer;
+}
+
+.plus-icon:hover {
+  background-position: -40px -1588px;
+}
+
+.add-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+}
+.add-icon:hover{
+  background-position: right -1106px;
+}
+
+.add-icon:hover i {
+  background-position: 0 -1063px;
+}
+
+.add-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -977px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+
+.share-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+  &:hover{
+    background-position: right -1106px;
+    i{
+      background-position: 0 -1268px;
+    }
+  }
+}
+
+.share-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -1225px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+
+.download-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+  &:hover{
+    background-position: right -1106px;
+    i{
+      background-position: 0 -2805px;
+    }
+  }
+}
+
+.download-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -2761px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+.comment-icon{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: right -1020px;
+  padding: 0 5px 0 0;
+  height: 31px;
+  cursor: pointer;
+  &:hover{
+    background-position: right -1106px;
+    i{
+      background-position: 0 -1508px;
+    }
+  }
+}
+
+.comment-icon i{
+  display: inline-block;
+  background: url("img/rankingpage/button2.png") no-repeat 0 9999px;
+  background-position: 0 -1465px;
+  height: 31px;
+  padding-right: 2px;
+  padding-left: 28px;
+  padding-top: 7.5px;
+  font-style: normal;
+}
+
+.song-heading-box{
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.head-img-box{
+  border: 1px solid #ccc;
+  padding: 0.2rem;
+}
+
+.song-heading{
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.song-heading2{
+  display: inline-block;
+  margin-left: 2.3rem;
+}
+
+.song-heading3{
+  display: inline-block;
+  margin-left: auto;
+}
+
+.song-heading3 span{
+  color: #c20b0d;
+}
+.table{
+  border: 1px solid #d9d9d9;
+  border-top: 2px solid #c20c0c;
+
+  width: 90%;
+  margin-top: 1.2rem;
+  border-collapse: collapse;
+}
+
+.thead tr{
+
+}
+
+.thead tr th{
+  background-color: blue;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  height: 38px;
+  background-color: #f7f7f7;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+.thead tr th div{
+  background-color: blue;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  height: 18px;
+  line-height: 18px;
+  //padding: 8px 10px;
+  background-position: 0 -56px;
+
+}
+
+.first{
+  width: 77px;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+.tbody tr:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.tbody tr:nth-child(even){
+  background-color: #ffffff;
+}
+
+.zero-icon{
+  display: inline-block;
+  line-height: 17px;
+  width: 28px;
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: -74px -268px;
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+}
+
+.first-column{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a5a5a5;
+}
+
+.firstColumn span:nth-child(1){
+  margin-left: 12px;
+  font-size: 1rem;
+}
+
+.play-icon2{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 -103px;
+}
+
+.title-link{
+  text-decoration: none;
+  color: #333333;
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis;
+  width: 100px;
+}
+
+.title-link:hover{
+  text-decoration: underline;
+}
+
+.second-column{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.1rem;
+  width: 25rem;
+
+}
+
+
+.tbody tr{
+  text-align: center;
+}
+
+.tbody tr td{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.time{
+  color:#777777;
+}
+
+.comment-heading-box{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border-bottom: 2px solid #c20b0d;
+}
+
+
+.comment{
+  display: flex;
+  gap:1.2rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3.6rem;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+
+.comment__box{
+  display: flex;
+  gap:1.2rem;
+  width: 90%;
+}
+
+.comment__avatar{
+  width: 5rem;
+  height: 5rem;
+}
+
+.comment__input{
+  flex:1;
+}
+
+.comment__input::placeholder {
+  /* 控制 placeholder 的样式 */
+  position: relative;
+  top: -1.5rem; /* 微调 */
+  left: 0.5rem;
+  color: #999;
+}
+
+.comment__span{
+  color: #767676;
+  position: absolute;
+  top:40%;
+  left: 13.2%;
+}
+
+.tools{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //gap:10rem;
+  margin-left: 6rem;
+}
+
+.tools__wrapper1{
+  display: flex;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tools__wrapper1__smile{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: -40px -490px;
+}
+
+.tools__wrapper1__at{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: -60px -490px;
+}
+.tools__wrapper2{
+  display: flex;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools__wrapper2__span{
+  color: #999999;
+}
+
+.tools__wrapper2__comment:visited,
+.tools__wrapper2__comment:link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 46px;
+  height: 25px;
+  background: url("img/rankingpage/button.png") no-repeat 0 9999px;
+  background-position: -84px -64px;
+}
+
+.tools__wrapper2__comment:hover,
+.tools__wrapper2__comment:active{
+  background-position: -84px -94px;
+}
+
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap:2.4rem;
+  text-decoration: none;
+  margin-top: 3.6rem;
+}
+
+.login__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.5rem;
+  text-decoration: none;
+}
+
+.login__box span{
+  color: #333333;
+}
+.login__box__link:link,
+.login__box__link:visited{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.login__box__link:hover,
+.login__box__link:active{
+
+}
+
+.login__btn:link,
+.login__btn:visited{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 2.5rem;
+  width: 10.8rem;
+  background-color: #ff5143;
+  border-radius: 2rem;
+  color: #fff;
+}
+
+
+.login__btn:hover,
+.login__btn:active{
+  text-decoration: underline;
+}
+
+.tbody tr:hover .play-box{
+  display: flex;
+}
+.tbody tr:hover .time{
+  display: none;
+}
+.play-box{
+  display: none;
+  gap:0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.play__play:link,
+.play__play:visited,{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+
+  background: url("img/rankingpage/icon.png") no-repeat 0 9999px;
+  background-position: 0 -700px;
+}
+
+.play__play:hover,
+.play__play:active {
+  background-position: -22px -700px;
+}
+
+
+.play__add:link,
+.play__add:visited,{
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 -174px;
+}
+
+.play__add:hover,
+.play__add:active {
+  background-position: -20px -174px;
+}
+
+
+.play__share:link,
+.play__share:visited,{
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: 0 -195px;
+}
+
+.play__share:hover,
+.play__share:active {
+  background-position: -20px -195px;
+}
+
+
+.play__download:link,
+.play__download:visited,{
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+
+  background: url("img/rankingpage/table.png") no-repeat 0 9999px;
+  background-position: -81px -174px;
+}
+
+.play__download:hover,
+.play__download:active {
+  background-position: -104px -174px;
+}
+
+.thirdColumn{
+  width: 10rem;
 }

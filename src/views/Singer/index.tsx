@@ -1,6 +1,6 @@
 import s from "./local.module.scss";
 import SectionLeft from "../../components/Sections/Singer/SectionLeft";
-import SectionRight from "../../components/Sections/Singer/SectionRight/Page1";
+import SectionRight from "../../components/Sections/Singer/SectionRight/Page2";
 
 const singer = () => {
   return (
