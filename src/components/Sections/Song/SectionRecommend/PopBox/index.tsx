@@ -1,5 +1,6 @@
 import s from "./local.module.scss";
 import clsx from "clsx";
+import { useState } from "react";
 
 interface PopBoxProps {
   showPop: boolean;

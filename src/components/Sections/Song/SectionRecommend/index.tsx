@@ -2,6 +2,7 @@ import FigureBox from "./FigureBox";
 import s from "./local.module.scss";
 import { useEffect, useRef, useState } from "react";
 import PopBox from "./PopBox";
+import PageBox from "./PageBox";
 
 const imgsOrigin = [
   {
@@ -235,6 +236,7 @@ const SectionRecommend = () => {
       setShowPop(true);
     }
   };
+  const [page, setPage] = useState(1);
   return (
     <section ref={section} className={s.sectionRecommend}>
       <div className={s.secondLinkFlexbox}>
@@ -256,12 +258,13 @@ const SectionRecommend = () => {
           {imgs.map((img, index) => (
             <FigureBox
               imgSrc={img.imgSrc}
-              songName={img.songName}
+              songName={page + img.songName}
               songTime={img.songTime}
             ></FigureBox>
           ))}
         </div>
       </div>
+      <PageBox setPageOut={setPage} />
     </section>
   );
 };
