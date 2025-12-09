@@ -1,38 +1,23 @@
-import s from "../local.module.scss"
+import s from "../local.module.scss";
 
 interface FigureBoxProps {
-    imgSrc: string;
-    songName: string;
-    singerNames: string[];
-    songTime: string;
+  imgSrc: string;
+  name: string;
 }
 
-const FigureBox = ({imgSrc,songName,singerNames,songTime}:FigureBoxProps) => {
-    return (
-        <figure className={s.figureOut}>
-
-            <div className={s.imgContainer}>
-                <img
-                    className={s.sectionNewCdImg}
-                    alt="song"
-                    src={imgSrc}
-                />
-                <a className={s.msk} href="#"></a>
-            </div>
-
-            <a className={s.songName} href="#">{songName}</a>
-            <div className={s.singerNames}>
-                {singerNames.map((name, index) => (
-                    <>
-                        <a className={s.singerName} href="#">{name}</a>
-                        {index < singerNames.length - 1 && <> / </>}
-                    </>
-                ))}
-            </div>
-        </figure>
-    )
-}
-
+const FigureBox = ({ imgSrc, name }: FigureBoxProps) => {
+  return (
+    <div className={s.figureOut}>
+      <a className={s.titleName} href="#">
+        <div className={s.titleNameBox}>
+          <div className={s.imgContainer}>
+            <img className={s.imgIcon} src={imgSrc} alt="" />
+          </div>
+          <em>{name}</em>
+        </div>
+      </a>
+    </div>
+  );
+};
 
 export default FigureBox;
-

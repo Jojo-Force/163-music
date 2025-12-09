@@ -4,69 +4,88 @@ import { useEffect, useRef, useState } from "react";
 
 const imgsOrigin = [
   {
-    imgSrc: "img/newcd/1.jpg",
-    songName: "自恋是骄傲",
-    singerNames: ["新裤子"],
+    imgSrc: "img/djradio/icon/1.jpg",
+    name: "情感",
   },
   {
-    imgSrc: "img/newcd/2.jpg",
-    songName: "没有答案的日子里",
-    singerNames: ["傻子与白痴"],
+    imgSrc: "img/djradio/icon/2.jpg",
+    name: "音乐博客",
   },
   {
-    imgSrc: "img/newcd/3.jpg",
-    songName: "TEENAGE RAMBLE",
-    singerNames: ["刘柏辛Lexie"],
+    imgSrc: "img/djradio/icon/3.jpg",
+    name: "有声书",
   },
   {
-    imgSrc: "img/newcd/4.jpg",
-    songName: "乐透人生GT：即刻入戏",
-    singerNames: ["马思唯"],
+    imgSrc: "img/djradio/icon/4.jpg",
+    name: "脱口秀",
   },
   {
-    imgSrc: "img/newcd/5.jpg",
-    songName: "在雨后醒来",
-    singerNames: ["艾志恒Asen"],
+    imgSrc: "img/djradio/icon/5.jpg",
+    name: "创作翻唱",
   },
   {
-    imgSrc: "img/newcd/6.jpg",
-    songName: "HEART MAID",
-    singerNames: ["宣美"],
+    imgSrc: "img/djradio/icon/6.jpg",
+    name: "电音",
   },
   {
-    imgSrc: "img/newcd/7.jpg",
-    songName: "RECOLLECTION, VOL. I - MY Harmonic Minor",
-    singerNames: ["杨千嬅"],
+    imgSrc: "img/djradio/icon/7.jpg",
+    name: "知识",
   },
   {
-    imgSrc: "img/newcd/8.jpg",
-    songName: "生活麻辣烫",
-    singerNames: ["王齐铭WatchMe"],
+    imgSrc: "img/djradio/icon/8.jpg",
+    name: "二次元",
   },
   {
-    imgSrc: "img/newcd/9.jpg",
-    songName: "离开银色荒原",
-    singerNames: ["裘德"],
+    imgSrc: "img/djradio/icon/9.jpg",
+    name: "明星专区",
   },
   {
-    imgSrc: "img/newcd/10.jpg",
-    songName: "有且",
-    singerNames: ["杨丞琳"],
+    imgSrc: "img/djradio/icon/10.jpg",
+    name: "生活",
   },
   {
-    imgSrc: "img/newcd/8.jpg",
-    songName: "生活麻辣烫",
-    singerNames: ["王齐铭WatchMe"],
+    imgSrc: "img/djradio/icon/11.jpg",
+    name: "亲子",
   },
   {
-    imgSrc: "img/newcd/9.jpg",
-    songName: "离开银色荒原",
-    singerNames: ["裘德"],
+    imgSrc: "img/djradio/icon/12.jpg",
+    name: "资讯",
   },
   {
-    imgSrc: "img/newcd/10.jpg",
-    songName: "有且",
-    singerNames: ["杨丞琳"],
+    imgSrc: "img/djradio/icon/13.jpg",
+    name: "广播剧",
+  },
+  {
+    imgSrc: "img/djradio/icon/14.jpg",
+    name: "故事",
+  },
+  {
+    imgSrc: "img/djradio/icon/15.jpg",
+    name: "人文历史",
+  },
+  {
+    imgSrc: "img/djradio/icon/16.jpg",
+    name: "娱乐",
+  },
+  {
+    imgSrc: "img/djradio/icon/17.jpg",
+    name: "相声曲艺",
+  },
+  {
+    imgSrc: "img/djradio/icon/18.jpg",
+    name: "其他",
+  },
+  {
+    imgSrc: "img/djradio/icon/19.jpg",
+    name: "文字出版",
+  },
+  {
+    imgSrc: "img/djradio/icon/20.png",
+    name: "常见问题",
+  },
+  {
+    imgSrc: "img/djradio/icon/21.png",
+    name: "我有做主播",
   },
 ];
 
@@ -77,7 +96,7 @@ const SectionIcon = () => {
   const imgBoxSub1 = useRef<HTMLDivElement>(null);
   const imgBox = useRef<HTMLDivElement>(null);
   const [len, setLen] = useState(0); // 初始值可保留
-  const childNum = 5;
+  const childNum = 9;
   let moveLen = -len;
 
   const [curPage, setCurPage] = useState(0);
@@ -143,12 +162,11 @@ const SectionIcon = () => {
     const index = Array.from(parent.children).indexOf(event.currentTarget);
 
     /*计算curPage和移动距离*/
-    curPage = index;
-    moveLen = curPage * -len;
+    setCurPage(index);
+    moveLen = index * -len;
 
     const sub1 = imgBoxSub1.current;
     sub1.style.transform = `translate(${moveLen}px, 0)`;
-    section.current.style.backgroundImage = `url(${imgs[curPage].imgBg})`;
   };
 
   return (
@@ -169,12 +187,7 @@ const SectionIcon = () => {
         <div ref={imgBox} className={s.imgBox}>
           <div ref={imgBoxSub1} className={s.imgBoxSub1}>
             {imgs.map((img, index) => (
-              <FigureBox
-                imgSrc={img.imgSrc}
-                songName={img.songName}
-                singerNames={img.singerNames}
-                songTime={img.songTime}
-              ></FigureBox>
+              <FigureBox imgSrc={img.imgSrc} name={img.name}></FigureBox>
             ))}
           </div>
         </div>
@@ -182,12 +195,6 @@ const SectionIcon = () => {
 
       <div className="dots">
         <button className="dot dot-select" onClick={dotClick}></button>
-        <button className="dot" onClick={dotClick}></button>
-        <button className="dot" onClick={dotClick}></button>
-        <button className="dot" onClick={dotClick}></button>
-        <button className="dot" onClick={dotClick}></button>
-        <button className="dot" onClick={dotClick}></button>
-        <button className="dot" onClick={dotClick}></button>
         <button className="dot" onClick={dotClick}></button>
       </div>
     </section>
