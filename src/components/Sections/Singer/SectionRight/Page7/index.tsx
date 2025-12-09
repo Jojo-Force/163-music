@@ -427,7 +427,7 @@ const SectionRight = () => {
     <div className={s.sectionRight}>
       <SectionArtist
         imgs={imgsOrigin}
-        more={true}
+        more={false}
         title={"欧美女歌手"}
         atoz={true}
       />

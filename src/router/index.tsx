@@ -25,6 +25,7 @@ import Page14 from "../components/Sections/Singer/SectionRight/Page14";
 import Page15 from "../components/Sections/Singer/SectionRight/Page15";
 import Page16 from "../components/Sections/Singer/SectionRight/Page16";
 import Page17 from "../components/Sections/Singer/SectionRight/Page17";
+import Djradio from "../views/Djradio";
 
 const routes = [
   // 嵌套路由开始
@@ -59,6 +60,7 @@ const routes = [
           { path: "cat15", element: <Page17 /> },
         ],
       },
+      { path: "djradio", element: <Djradio /> },
     ],
   },
   // 嵌套路由结束

@@ -97,9 +97,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a href="#" className={s.secondNavLink}>
+            <Link to="/djradio" className={s.secondNavLink}>
               播客
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/singer" className={s.secondNavLink}>
