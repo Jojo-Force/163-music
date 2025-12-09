@@ -70,17 +70,17 @@ const imgsOrigin = [
 
 const imgs = [...imgsOrigin];
 
-const SectionRecommend = () => {
+const SectionRanking = () => {
   const section = useRef<HTMLDivElement>(null);
   const imgBoxSub1 = useRef<HTMLDivElement>(null);
   const imgBox = useRef<HTMLDivElement>(null);
 
   return (
-    <section ref={section} className={s.sectionRecommend}>
+    <section ref={section} className={s.sectionRanking}>
       <div className={s.secondLinkFlexbox}>
         <div className={s.secondLinkInnerBox}>
           <a className={s.headingLink} href="#">
-            节目排行榜
+            热门推荐
           </a>
         </div>
         <button className={s.moreBtn}>{"更多 >"}</button>
@@ -94,6 +94,7 @@ const SectionRecommend = () => {
               songName={img.songName}
               title={img.title}
               radio={img.radio}
+              index={index}
             ></FigureBox>
           ))}
         </div>
@@ -102,4 +103,4 @@ const SectionRecommend = () => {
   );
 };
 
-export default SectionRecommend;
+export default SectionRanking;

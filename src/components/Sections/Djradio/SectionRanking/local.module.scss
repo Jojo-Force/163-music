@@ -1,4 +1,4 @@
-.section-recommend {
+.section-ranking {
   background-color: #fafafa;
   //height: 60rem;
   width: 40rem;
@@ -250,7 +250,7 @@
   color: #333333;
   cursor: pointer;
   text-decoration: none;
-  //margin-right: 1.2rem;
+  margin-right: 1.2rem;
 }
 
 .heading-link:active,
@@ -290,7 +290,7 @@
   //background-position: 0 -537px;
   //height: 27px;
   //width: 100%;
-  width: 25rem;
+  width: 19rem;
   color: #cccccc;
   padding: 0 0.5rem;
 }
@@ -390,3 +390,53 @@
   border: 1px solid #666;
 }
 
+
+.number-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding-top: 0.2rem;
+}
+.number-icon{
+  display: inline-block;
+  background: url("img/djradio/recommend/icon.png") no-repeat 0 9999px;
+  background-position: -74px -274px;
+  width: 6px;
+  height: 6px;
+  margin: -2px 3px 0 0;
+  vertical-align: middle;
+}
+
+.number-span{
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.number-span-red{
+  color:#e14545;
+}
+.number-span2{
+  display: inline-block;
+  margin: 0 10px 5px 10px;
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+
+
+.bar{
+  margin-left: auto;
+  margin-right: 2rem;
+  min-width: 10rem;
+  height: 0.8rem;
+  background-color: #dedede;
+  border-radius: 0.5rem;
+}
+
+.bar-son{
+  width: 0;
+  height: 0.8rem;
+  background-color: #c5c5c5;
+  border-radius: 0.5rem;
+}
