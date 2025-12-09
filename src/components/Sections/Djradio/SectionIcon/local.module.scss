@@ -1,5 +1,5 @@
 .section-icon {
-  background-color: #fafafa;
+  background-color: #ffffff;
   //height: 60rem;
   display: flex;
   flex-direction: column;
@@ -7,8 +7,8 @@
   align-items: center;
   gap: 1.6rem;
   position: relative;
-  //padding: 0 2.4rem;
-  padding-top: 3.6rem;
+  padding: 0 2.4rem;
+  //padding-top: 3.6rem;
 }
 
 .figure-out {
@@ -43,6 +43,7 @@
 .title-name em{
   color: #888888;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
 .title-name-box {
@@ -54,9 +55,14 @@
   padding: 1rem 0.5rem ;
   border-radius: 0.3rem;
 }
-.title-name-box:hover{
+.title-name:hover .title-name-box{
   background-color: #f6f7f7;
 }
+
+.title-name:hover .title-name-box .img-container .img-icon{
+  object-position: 0 50%;
+}
+
 .title-name:link,
 .title-name:visited {
   display: inline-block;
@@ -122,7 +128,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(0%, -50%);
+  transform: translate(-50%, -10%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +145,7 @@
   position: absolute;
   top: 50%;
   right: -0.2rem;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, -10%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,30 +155,47 @@
   z-index: 2;
 }
 
+.disable.right-icon {
+  color:#ebebeb;
+}
+
+.disable.left-icon {
+  color:#ebebeb;
+}
+
+.right-btn:hover .disable.right-icon{
+  color:#ebebeb;
+}
+
+.left-btn:hover .disable.left-icon{
+  color:#ebebeb;
+}
+
 .left-btn:hover .left-icon{
-  color:#656565;
+  color:#999999;
 }
 
 .left-icon {
-  width: 4.2rem;
-  height: 4.2rem;
-  color: #898989;
+  width: 3.6rem;
+  height: 3.6rem;
+  color: #bfbfbf;
 }
 
 .right-btn:hover .right-icon{
-  color:#656565;
+  color:#999999;
 }
 .right-icon {
-  width: 4.2rem;
-  height: 4.2rem;
-  color: #898989;
+  width: 3.6rem;
+  height: 3.6rem;
+  color: #bfbfbf;
 }
 
 .img-box-sub1 {
   display: grid;
-  gap: 1.4rem;
+  row-gap: 1.4rem;
+  column-gap: 3.6rem;
   grid-template-rows: 1fr 1fr;
-  transition: all 1s ease-out;
+  //transition: all 0.2s ease-out;
   transform: translate(0,0);
   grid-auto-flow: column;
 }
@@ -268,10 +291,10 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding-left: 1.6rem;
   padding-right: 0rem;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
-  border: 1px solid #d3d3d3;
+  //border: 1px solid #d3d3d3;
 }

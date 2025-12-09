@@ -96,7 +96,9 @@ const SectionIcon = () => {
   const imgBoxSub1 = useRef<HTMLDivElement>(null);
   const imgBox = useRef<HTMLDivElement>(null);
   const [len, setLen] = useState(0); // 初始值可保留
-  const childNum = 9;
+  const [disLeft, setDisLeft] = useState(true);
+  const [disRight, setDisRight] = useState(false);
+  const childNum = 11;
   let moveLen = -len;
 
   const [curPage, setCurPage] = useState(0);
@@ -120,7 +122,7 @@ const SectionIcon = () => {
     imgBoxSub1.current.style.transition = "none";
     imgBoxSub1.current.style.transform = `translate(0px, 0)`;
     setTimeout(() => {
-      imgBoxSub1.current.style.transition = "transform 1s ease-out";
+      // imgBoxSub1.current.style.transition = "transform 0.2s ease-out";
     }, 50);
   };
   useEffect(() => {
@@ -128,24 +130,35 @@ const SectionIcon = () => {
   }, []);
   const rightBtnClick = () => {
     const sub1 = imgBoxSub1.current;
+    const dots = section.current.querySelector(".dots");
 
     if (curPage === maxPage) {
     } else {
+      dots.children[curPage].classList.remove("dot-select");
       setCurPage(curPage + 1);
       moveLen = (curPage + 1) * -len;
-      sub1.style.transition = "transform 1s ease-out";
+      //sub1.style.transition = "transform 0.2s ease-out";
       sub1.style.transform = `translate(${moveLen}px, 0)`;
+      dots.children[curPage + 1].classList.add("dot-select");
+      setDisLeft(false);
+      setDisRight(true);
     }
   };
 
   const leftBtnClick = () => {
     const sub1 = imgBoxSub1.current;
+    const dots = section.current.querySelector(".dots");
+
     if (curPage === 0) {
     } else {
+      dots.children[curPage].classList.remove("dot-select");
       setCurPage(curPage - 1);
       moveLen = (curPage - 1) * -len;
-      sub1.style.transition = "transform 1s ease-out";
+      //sub1.style.transition = "transform 0.2s ease-out";
       sub1.style.transform = `translate(${moveLen}px, 0)`;
+      dots.children[curPage - 1].classList.add("dot-select");
+      setDisLeft(true);
+      setDisRight(false);
     }
 
     console.log(curPage);
@@ -165,6 +178,16 @@ const SectionIcon = () => {
     setCurPage(index);
     moveLen = index * -len;
 
+    if (index === 0) {
+      setDisLeft(true);
+      setDisRight(false);
+    }
+
+    if (index === 1) {
+      setDisLeft(false);
+      setDisRight(true);
+    }
+
     const sub1 = imgBoxSub1.current;
     sub1.style.transform = `translate(${moveLen}px, 0)`;
   };
@@ -173,16 +196,29 @@ const SectionIcon = () => {
     <section ref={section} className={s.sectionIcon}>
       <div className={s.imgBigBox}>
         <button className={s.leftBtn} onClick={leftBtnClick}>
-          <ion-icon
-            className={s.leftIcon}
-            name="chevron-back-outline"
-          ></ion-icon>
+          {disLeft === true && (
+            <ion-icon
+              class={s.leftIcon + " " + s.disable}
+              name="chevron-back-outline"
+            ></ion-icon>
+          )}
+          {disLeft === false && (
+            <ion-icon class={s.leftIcon} name="chevron-back-outline"></ion-icon>
+          )}
         </button>
         <button className={s.rightBtn} onClick={rightBtnClick}>
-          <ion-icon
-            className={s.rightIcon}
-            name="chevron-forward-outline"
-          ></ion-icon>
+          {disRight === true && (
+            <ion-icon
+              class={s.rightIcon + " " + s.disable}
+              name="chevron-forward-outline"
+            ></ion-icon>
+          )}
+          {disRight === false && (
+            <ion-icon
+              class={s.rightIcon}
+              name="chevron-forward-outline"
+            ></ion-icon>
+          )}
         </button>
         <div ref={imgBox} className={s.imgBox}>
           <div ref={imgBoxSub1} className={s.imgBoxSub1}>
@@ -194,8 +230,11 @@ const SectionIcon = () => {
       </div>
 
       <div className="dots">
-        <button className="dot dot-select" onClick={dotClick}></button>
-        <button className="dot" onClick={dotClick}></button>
+        <button
+          className="dot dot-small dot-select"
+          onClick={dotClick}
+        ></button>
+        <button className="dot dot-small" onClick={dotClick}></button>
       </div>
     </section>
   );
