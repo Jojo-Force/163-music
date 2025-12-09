@@ -22,15 +22,15 @@ const menu = [
     items: [
       {
         name: "华语男歌手",
-        link: "/",
+        link: "/singer/cat1",
       },
       {
         name: "华语女歌手",
-        link: "/",
+        link: "/singer/cat2",
       },
       {
         name: "华语组合/乐队",
-        link: "/",
+        link: "/singer/cat3",
       },
     ],
   },
@@ -39,15 +39,15 @@ const menu = [
     items: [
       {
         name: "欧美男歌手",
-        link: "/",
+        link: "/singer/cat4",
       },
       {
         name: "欧美女歌手",
-        link: "/",
+        link: "/singer/cat5",
       },
       {
         name: "欧美组合/乐队",
-        link: "/",
+        link: "/singer/cat6",
       },
     ],
   },
@@ -56,15 +56,15 @@ const menu = [
     items: [
       {
         name: "日本男歌手",
-        link: "/",
+        link: "/singer/cat7",
       },
       {
         name: "日本女歌手",
-        link: "/",
+        link: "/singer/cat8",
       },
       {
         name: "日本组合/乐队",
-        link: "/",
+        link: "/singer/cat9",
       },
     ],
   },
@@ -73,15 +73,15 @@ const menu = [
     items: [
       {
         name: "韩国男歌手",
-        link: "/",
+        link: "/singer/cat10",
       },
       {
         name: "韩国女歌手",
-        link: "/",
+        link: "/singer/cat11",
       },
       {
         name: "韩国组合/乐队",
-        link: "/",
+        link: "/singer/cat12",
       },
     ],
   },
@@ -90,15 +90,15 @@ const menu = [
     items: [
       {
         name: "其他男歌手",
-        link: "/",
+        link: "/singer/cat13",
       },
       {
         name: "其他女歌手",
-        link: "/",
+        link: "/singer/cat14",
       },
       {
         name: "其他组合/乐队",
-        link: "/",
+        link: "/singer/cat15",
       },
     ],
   },

@@ -292,3 +292,44 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.atoz-box{
+  display: flex;
+  //gap: 1.2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 94%;
+}
+
+.hot-link:link,
+.hot-link:visited{
+  display: inline-block;
+  text-decoration: none;
+  color:#333;
+}
+
+.hot-link:hover,
+.hot-link:active{
+  text-decoration: underline;
+}
+
+
+
+.other:link,
+.other:visited{
+  color:#333;
+}
+
+.a-z:link,
+.a-z:visited{
+  color:#333;
+  font-size: 1.5rem;
+}
+
+.hot:link,
+.hot:visited{
+  color: #fff;
+  background: #c20c0c;
+  border-radius: 2px;
+  padding: 0.6rem 0.8rem;
+}
